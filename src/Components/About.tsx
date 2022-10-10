@@ -45,6 +45,20 @@ export default function About() {
               </div>
               <div>
                 <p>
+                  I also write blogs, find them &nbsp;
+                  <a
+                    href="https://medium.com/@pranshu1902"
+                    rel="noreferrer"
+                    target={"_blank"}
+                    className="text-[#64ffda] txt hover:underline transition duration-1000"
+                  >
+                    here
+                  </a>
+                  .
+                </p>
+              </div>
+              <div>
+                <p>
                   I'm a GDC Fellow '22 and Teaching Assistant @
                   <a
                     href="https://www.pupilfirst.org/"
@@ -69,20 +83,6 @@ export default function About() {
                 <div className="pt-4">
                   <p>
                     Currently exploring Cloud Computing and App Development.
-                  </p>
-                </div>
-                <div>
-                  <p>
-                    I also write blogs, find them &nbsp;
-                    <a
-                      href="https://medium.com/@pranshu1902"
-                      rel="noreferrer"
-                      target={"_blank"}
-                      className="text-[#64ffda] txt hover:underline transition duration-1000"
-                    >
-                      here
-                    </a>
-                    .
                   </p>
                 </div>
               </div>
