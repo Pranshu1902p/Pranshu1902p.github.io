@@ -84,12 +84,12 @@ export default function Home() {
               Typescript, Java, etc. <br />
               <p className="text-[#01d293] pt-2 text-2xl">Sic Parvis Magna</p>
             </p>
-            <Link
-              href="/contact"
+            <a
+              href="mailto:apoorvd14@gmail.com"
               className="md:w-1/6 mt-6 flex justify-center items-center font-bold transition duration-500 bg-[#66fcf1] hover:bg-[#45a29e] text-black rounded-lg p-2"
             >
               Get in Touch
-            </Link>
+            </a>
           </div>
           <div className="flex justify-center items-center w-3/4">
             <img className="bg-transparent" src={computerLogo} alt="" />
