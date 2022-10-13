@@ -85,7 +85,7 @@ export default function Home() {
               <p className="text-[#01d293] pt-2 text-2xl">Sic Parvis Magna</p>
             </p>
             <a
-              href="mailto:apoorvd14@gmail.com"
+              href="mailto:pranshu1902@gmail.com"
               className="md:w-1/6 mt-6 flex justify-center items-center font-bold transition duration-500 bg-[#66fcf1] hover:bg-[#45a29e] text-black rounded-lg p-2"
             >
               Get in Touch
