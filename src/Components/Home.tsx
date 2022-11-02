@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import Footer from "./Common/Footer";
 import Header from "./Common/Header";
 import computerLogo from "../computer.png";
-import { Link } from "raviger";
 import mongo from "../Images/tech/mongodb.png";
 import Nextjs from "../Images/tech/nextjs.png";
 import React from "../Images/tech/React.png";
