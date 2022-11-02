@@ -30,7 +30,7 @@ export default function Experience() {
       image: unilink,
       description:
         "Unilink helps connect college students in a professional way ensuring that they have an enriching experience at college.",
-      position: "Founder",
+      position: "Co-Founder",
       tech: ["Entrepreneurship", "Leadership", "Web Dev"],
       startDate: "Oct 2022",
       endDate: "Present",
