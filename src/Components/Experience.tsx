@@ -3,6 +3,7 @@ import Footer from "./Common/Footer";
 import Header from "./Common/Header";
 import experienceLogo from "../experience.png";
 import { experienceType, linkType } from "../Types/DataType";
+import egov from "../Images/experience/egov.png";
 import unilink from "../Images/experience/unilink.png";
 import gdsc from "../Images/experience/gdsc.png";
 import pupilfirst from "../Images/experience/pupilfirst.png";
@@ -15,6 +16,16 @@ import Biosphere from "../Images/experience/biosphere.png";
 
 export default function Experience() {
   const experiences: experienceType[] = [
+    {
+      name: "eGov Foundation",
+      image: egov,
+      description:
+        "Part of a team building the CARE software deployed in multiple states of India in hospitals.",
+      position: "Web Developer",
+      tech: ["Django", "React"],
+      startDate: "Nov 2022",
+      endDate: "Present",
+    },
     {
       name: "Google Developer Student Club",
       image: gdsc,
@@ -93,7 +104,7 @@ export default function Experience() {
       image: Gdc,
       tech: ["React", "Django", "Typescript", "Tailwind"],
       startDate: "May 2022",
-      endDate: "Present",
+      endDate: "Nov 2022",
     },
     {
       name: "Biosphere Club, VIT",
