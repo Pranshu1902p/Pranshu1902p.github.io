@@ -5,6 +5,7 @@ import codeLogo from "../code.png";
 import { linkType, projectType } from "../Types/DataType";
 
 // Import project images
+import care from "../Images/projects/care.png";
 import unilink1 from "../Images/projects/unilink1.png";
 import unilink2 from "../Images/projects/unilink2.png";
 import unilink3 from "../Images/projects/unilink3.png";
@@ -31,6 +32,20 @@ import Carousal from "./Common/Carousal";
 
 export default function Projects() {
   const projects: projectType[] = [
+    {
+      name: "Care",
+      description:
+        "Care is an integrated tele-triage+bed allocation+patient shifting tool for implementing a decentralised Covid19 management strategy.",
+      link: "https://care.coronasafe.in/",
+      githubLink: "https://github.com/coronasafe/care_fe/",
+      image: [care],
+      tech: [
+        { name: "Django" },
+        { name: "React" },
+        { name: "Typescript" },
+        { name: "Tailwind" },
+      ],
+    },
     {
       name: "Uni-Link",
       description:
