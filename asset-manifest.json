@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.25f305b3.css",
-    "main.js": "/static/js/main.12f272d7.js",
+    "main.js": "/static/js/main.8f8c17d2.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/unilink1.png": "/static/media/unilink1.cf23fddf7039f7c0cfa5.png",
     "static/media/breakout.png": "/static/media/breakout.802319283b72155c2fae.png",
@@ -13,6 +13,7 @@
     "static/media/books_world3.png": "/static/media/books_world3.97d41fd62f131f167e62.png",
     "static/media/bizzcard2.png": "/static/media/bizzcard2.06fa51d40f01b6c5dcad.png",
     "static/media/thegladdenproject.png": "/static/media/thegladdenproject.fae2acf292fcb895735a.png",
+    "static/media/care.png": "/static/media/care.c5cb9bbc3972c349c5a8.png",
     "static/media/React.png": "/static/media/React.81ed438b18e24116794d.png",
     "static/media/books_world2.png": "/static/media/books_world2.d2cb26b1cb5b5b97fa1a.png",
     "static/media/money_manager2.png": "/static/media/money_manager2.bd695b30a8db553d6b3a.png",
@@ -51,11 +52,11 @@
     "index.html": "/index.html",
     "static/media/typescript.svg": "/static/media/typescript.22b4f22ec3ee32c08fb2c0a25682bb5b.svg",
     "main.25f305b3.css.map": "/static/css/main.25f305b3.css.map",
-    "main.12f272d7.js.map": "/static/js/main.12f272d7.js.map",
+    "main.8f8c17d2.js.map": "/static/js/main.8f8c17d2.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.25f305b3.css",
-    "static/js/main.12f272d7.js"
+    "static/js/main.8f8c17d2.js"
   ]
 }
