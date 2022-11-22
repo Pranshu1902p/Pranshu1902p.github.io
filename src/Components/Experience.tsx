@@ -52,7 +52,7 @@ export default function Experience() {
       image: pupilfirst,
       description:
         "Teaching Assistant of web development courses on Pupilfirst LMS, helping 3000+ students.",
-      position: "Member of Tech Team",
+      position: "Teaching Assistant",
       tech: ["Web development", "Teaching", "Leadership"],
       startDate: "Sept 2022",
       endDate: "Present",
