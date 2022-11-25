@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import profile from "../Images/profile.jpg";
 import Footer from "./Common/Footer";
 import Header from "./Common/Header";
 import computerLogo from "../computer.png";
@@ -148,12 +149,11 @@ export default function Home() {
           </div>
           <div className="md:w-1/2 flex justify-center items-center">
             <img
-              src="https://avatars.githubusercontent.com/u/70687348?v=4"
+              src={profile}
               alt="profile"
               width={"40%"}
-              className="rounded-full border-2 border-[#64ffda] md:p-3"
+              className="rounded-sm border-2 border-[#64ffda] md:p-3"
             />
-            {/* <ImageCube /> */}
           </div>
         </div>
 

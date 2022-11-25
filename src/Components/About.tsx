@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { linkType } from "../Types/DataType";
+import profile from "../Images/profile.jpg";
 import Footer from "./Common/Footer";
 import Header from "./Common/Header";
 
@@ -80,19 +81,14 @@ export default function About() {
                   &nbsp; as a full-stack web developer.
                 </p>
                 <p>Entrepreneurship and self-help books enthusiast.</p>
-                <div className="pt-4">
-                  <p>
-                    Currently exploring Cloud Computing and App Development.
-                  </p>
-                </div>
               </div>
             </div>
             <div className="md:w-1/2 flex justify-center items-center">
               <img
-                src="https://avatars.githubusercontent.com/u/70687348?v=4"
+                src={profile}
                 alt="profile"
                 width={"40%"}
-                className="rounded-full border-2 border-[#64ffda] md:p-3"
+                className="rounded-sm border-2 border-[#64ffda] md:p-3"
               />
             </div>
           </div>
