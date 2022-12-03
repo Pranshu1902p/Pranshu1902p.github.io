@@ -19,6 +19,7 @@ import kotlin from "../Images/tech/kotlin.png";
 import express from "../Images/tech/expressjs.png";
 import { linkType } from "../Types/DataType";
 import { TypeAnimation } from "react-type-animation";
+import { Link } from "raviger";
 
 export default function Home() {
   const technologies = [
@@ -41,6 +42,7 @@ export default function Home() {
   const filters: linkType[] = [
     { title: "Home", active: true, link: "/" },
     { title: "About", active: false, link: "/about" },
+    { title: "Blogs", active: false, link: "/blogs" },
     { title: "Projects", active: false, link: "/projects" },
     { title: "Experience", active: false, link: "/experience" },
   ];
@@ -134,15 +136,13 @@ export default function Home() {
             </div>
             <div>
               <p>
-                I also write blogs, find them &nbsp;
-                <a
-                  href="https://medium.com/@pranshu1902"
-                  rel="noreferrer"
-                  target={"_blank"}
+                I also write &nbsp;
+                <Link
+                  href="/blogs"
                   className="text-[#64ffda] txt hover:underline transition duration-1000"
                 >
-                  here
-                </a>
+                  blogs
+                </Link>
                 .
               </p>
             </div>

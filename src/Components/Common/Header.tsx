@@ -31,7 +31,19 @@ export default function Header(props: { filters: linkType[] }) {
       {/* Desktop View */}
       <div className="hidden md:block fadeIn">
         <div className="flex flex-row gap-12 text-xl justify-end text-[#c5c6c7]">
-          <Link
+          {props.filters.map((filter) => (
+            <Link
+              href={filter.link}
+              className={`${
+                filter.active
+                  ? "text-[#66fcf1] border-b-2 border-[#66fcf1]"
+                  : "hover:text-[#66fcf1] hover:border-b-2 hover:border-[#66fcf1]"
+              } flex items-center transition duration-500`}
+            >
+              {filter.title}
+            </Link>
+          ))}
+          {/* <Link
             href="/"
             className="hover:text-[#66fcf1] flex items-center hover:border-b-2 hover:border-[#66fcf1] transition duration-500"
           >
@@ -44,6 +56,12 @@ export default function Header(props: { filters: linkType[] }) {
             About
           </Link>
           <Link
+            href="/blogs"
+            className="hover:text-[#66fcf1] flex items-center hover:border-b-2 hover:border-[#66fcf1] transition duration-500"
+          >
+            Blogs
+          </Link>
+          <Link
             href="/projects"
             className="hover:text-[#66fcf1] flex items-center hover:border-b-2 hover:border-[#66fcf1] transition duration-500"
           >
@@ -54,7 +72,7 @@ export default function Header(props: { filters: linkType[] }) {
             className="hover:text-[#66fcf1] flex items-center hover:border-b-2 hover:border-[#66fcf1] transition duration-500"
           >
             Experience
-          </Link>
+          </Link> */}
           <button
             className="hover:bg-[#112240] transition duration-300 flex justify-center w-36 border-2 border-[#01d293] text-[#01d293] p-2 rounded-lg"
             onClick={onButtonClick}

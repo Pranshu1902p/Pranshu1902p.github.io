@@ -193,6 +193,7 @@ export default function Projects() {
   const filters: linkType[] = [
     { title: "Home", active: false, link: "/" },
     { title: "About", active: false, link: "/about" },
+    { title: "Blogs", active: false, link: "/blogs" },
     { title: "Projects", active: true, link: "/projects" },
     { title: "Experience", active: false, link: "/experience" },
   ];
@@ -214,7 +215,7 @@ export default function Projects() {
             alt="code logo"
             className="bg-transparent w-1/6 flex"
           />
-          <h1 className="text-[#66fcf1] font-bold flex text-6xl md:text-8xl">
+          <h1 className="text-[#66fcf1] font-bold flex text-5xl md:text-8xl">
             Projects
           </h1>
         </div>
