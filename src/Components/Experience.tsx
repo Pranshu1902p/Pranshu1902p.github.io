@@ -21,7 +21,7 @@ export default function Experience() {
       image: egov,
       description:
         "Part of a team building the CARE software deployed in multiple states of India in hospitals.",
-      position: "Web Developer",
+      position: "SDE Intern",
       tech: ["Django", "React"],
       startDate: "Nov 2022",
       endDate: "Present",
