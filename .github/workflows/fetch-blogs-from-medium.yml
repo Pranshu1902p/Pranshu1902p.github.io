@@ -50,4 +50,5 @@ jobs:
       - name: Deploy to github pages
         run: |
           npm i
+          npm run build
           npm run deploy
