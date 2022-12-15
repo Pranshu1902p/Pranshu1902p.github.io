@@ -48,7 +48,10 @@ jobs:
 
       # deploy to github pages
       - name: Deploy to github pages
-        run: |
-          npm i
-          npm run build
-          npm run deploy
+        uses: actions/checkout@v2
+        with:
+          repository: "Pranshu1902p/Pranshu1902p.github.io"
+          run: |
+            npm i
+            npm run build
+            npm run deploy
