@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1716c8c6.css",
-    "main.js": "/static/js/main.3caa95bf.js",
+    "main.js": "/static/js/main.6bad0604.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/profile.jpg": "/static/media/profile.91a4a0ee8e2b5eda43ba.jpg",
     "static/media/unilink1.png": "/static/media/unilink1.cf23fddf7039f7c0cfa5.png",
@@ -9,7 +9,12 @@
     "static/media/gladdenproject.png": "/static/media/gladdenproject.93f71e0dbc0503c0e9f6.png",
     "static/media/p_chat.png": "/static/media/p_chat.7cff8a277d867f3d4aaa.png",
     "static/media/martial arts.png": "/static/media/martial arts.34d19f8876e48500b78b.png",
+    "static/media/voting2.png": "/static/media/voting2.138d45b5168e06bfcd92.png",
+    "static/media/voting3.png": "/static/media/voting3.03ffbd3e0255c4ecad2e.png",
+    "static/media/voting5.png": "/static/media/voting5.10ad321b1f275818e516.png",
+    "static/media/voting4.png": "/static/media/voting4.b91201b3605b2be6145c.png",
     "static/media/books_world1.png": "/static/media/books_world1.4c490c5d24ec5113081c.png",
+    "static/media/voting1.png": "/static/media/voting1.8bd3473d16daf69651cf.png",
     "static/media/jarvis.png": "/static/media/jarvis.563a8565d5c815ac8586.png",
     "static/media/books_world3.png": "/static/media/books_world3.97d41fd62f131f167e62.png",
     "static/media/bizzcard2.png": "/static/media/bizzcard2.06fa51d40f01b6c5dcad.png",
@@ -53,11 +58,11 @@
     "index.html": "/index.html",
     "static/media/typescript.svg": "/static/media/typescript.22b4f22ec3ee32c08fb2c0a25682bb5b.svg",
     "main.1716c8c6.css.map": "/static/css/main.1716c8c6.css.map",
-    "main.3caa95bf.js.map": "/static/js/main.3caa95bf.js.map",
+    "main.6bad0604.js.map": "/static/js/main.6bad0604.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1716c8c6.css",
-    "static/js/main.3caa95bf.js"
+    "static/js/main.6bad0604.js"
   ]
 }
