@@ -49,4 +49,5 @@ jobs:
       # deploy to github pages
       - name: Deploy to github pages
         run: |
+          npm i
           npm run deploy
