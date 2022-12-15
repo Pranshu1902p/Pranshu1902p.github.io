@@ -5,6 +5,11 @@ import codeLogo from "../code.png";
 import { linkType, projectType } from "../Types/DataType";
 
 // Import project images
+import voting1 from "../Images/projects/voting1.png";
+import voting2 from "../Images/projects/voting2.png";
+import voting3 from "../Images/projects/voting3.png";
+import voting4 from "../Images/projects/voting4.png";
+import voting5 from "../Images/projects/voting5.png";
 import care from "../Images/projects/care.png";
 import unilink1 from "../Images/projects/unilink1.png";
 import unilink2 from "../Images/projects/unilink2.png";
@@ -32,6 +37,20 @@ import Carousal from "./Common/Carousal";
 
 export default function Projects() {
   const projects: projectType[] = [
+    {
+      name: "Online Voting",
+      description:
+        "One shot platform to host elections and view results. Manage your voters, view live results, get result graphs and much more.",
+      link: "https://online-voting-pranshu1902.onrender.com/",
+      githubLink: "https://github.com/Pranshu1902/Online-Voting",
+      image: [voting1, voting2, voting3, voting4, voting5],
+      tech: [
+        { name: "ExpressJs" },
+        { name: "NodeJs" },
+        { name: "EJS" },
+        { name: "Postgres" },
+      ],
+    },
     {
       name: "Care",
       description:
