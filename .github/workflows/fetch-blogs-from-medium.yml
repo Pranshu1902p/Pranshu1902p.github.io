@@ -8,6 +8,7 @@ permissions:
   contents: write
 jobs:
   publish:
+    concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
     steps:
       # checkout actions
@@ -53,6 +54,11 @@ jobs:
       # deploy to github pages
       - name: Deploy to github pages
         run: |
-          npm i
+          npm ci
           npm run build
           npm run deploy
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build
