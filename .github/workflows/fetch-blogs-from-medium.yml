@@ -2,7 +2,7 @@ name: fetch-blogs-from-medium
 run-name: Scrapping Pranshu's Medium blog
 on:
   schedule:
-    - cron: "17 19 * * *" # run 7:30 AM IST everyday
+    - cron: "25 19 * * *" # run 7:30 AM IST everyday
 permissions:
   contents: write
 jobs:
@@ -48,12 +48,12 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: master
 
-      # - name: Build for github pages
-      #   run: |
-      #     npm i
-      #     npm run build
+      - name: Build for github pages
+        run: |
+          npm i
+          npm run build
 
-      # - name: Deploy 🚀
-      #   uses: JamesIves/github-pages-deploy-action@v4
-      #   with:
-      #     folder: build
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build
