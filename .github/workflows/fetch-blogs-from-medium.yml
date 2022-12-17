@@ -9,8 +9,6 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      # checkout actions
-      - uses: actions/checkout@v3
       # added repository details
       - uses: actions/checkout@v2
         with:
