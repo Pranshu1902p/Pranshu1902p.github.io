@@ -2,18 +2,15 @@ name: fetch-blogs-from-medium
 run-name: Scrapping Pranshu's Medium blog
 on:
   schedule:
-    - cron: "45 12 * * *" # run 7:30 AM IST everyday
+    - cron: "25 14 * * *" # run script after everyday
 permissions:
   contents: write
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      # git checkout
-      - uses: actions/checkout@v2
-        with:
-          ref: master
-          # repository: "Pranshu1902p/Pranshu1902p.github.io"
+      # checkout actions
+      - uses: actions/checkout@v3
       # setup python
       - name: setup python
         uses: actions/setup-python@v2
@@ -38,7 +35,7 @@ jobs:
       - name: stage changed files
         run: git add .
       - name: commit changed files
-        run: git commit -m "🌍 Update JSON- Web Scrap Blogs from Medium - $(date -d '+5 hours +30 minutes' +'%d %b %Y | %I:%M %p')"
+        run: git commit -m "🌍 Update JSON- srap blogs from medium"
       - name: fetch from master
         run: git fetch origin master
       # authentication details
@@ -47,13 +44,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: master
-
-      # - name: Build for github pages
-      #   run: |
-      #     npm i
-      #     npm run build
-
-      # - name: Deploy 🚀
-      #   uses: JamesIves/github-pages-deploy-action@v4
-      #   with:
-      #     folder: build
