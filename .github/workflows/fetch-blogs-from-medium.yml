@@ -2,7 +2,7 @@ name: fetch-blogs-from-medium
 run-name: Scrapping Pranshu's Medium blog
 on:
   schedule:
-    - cron: "3 * * * *" # run script after everyday
+    - cron: "0 1 * * *" # run 7:30 AM IST everyday
 permissions:
   contents: write
 jobs:
@@ -39,7 +39,7 @@ jobs:
       - name: stage changed files
         run: git add .
       - name: commit changed files
-        run: git commit -m "🌍 Update JSON- srap blogs from medium"
+        run: git commit -m "🌍 Update JSON- Web Scrap Blogs from Medium - $(date -d '+5 hours +30 minutes' +'%d %b %Y | %I:%M %p')"
       - name: fetch from master
         run: git fetch origin master
       # authentication details
