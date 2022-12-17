@@ -2,7 +2,7 @@ name: fetch-blogs-from-medium
 run-name: Scrapping Pranshu's Medium blog
 on:
   schedule:
-    - cron: "25 14 * * *" # run script after everyday
+    - cron: "40 14 * * *" # run script after everyday
 permissions:
   contents: write
 jobs:
@@ -11,6 +11,8 @@ jobs:
     steps:
       # checkout actions
       - uses: actions/checkout@v3
+        with:
+          ref: master
       # setup python
       - name: setup python
         uses: actions/setup-python@v2
