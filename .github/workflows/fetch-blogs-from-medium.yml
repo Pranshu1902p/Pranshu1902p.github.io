@@ -1,34 +1,65 @@
 name: fetch-blogs-from-medium
 run-name: Scrapping Pranshu's Medium blog
-on:
-  schedule:
-    - cron: "0 1 * * *" # run 6:30 AM IST everyday
+on: [push]
+#  schedule:
+#    - cron: "0 1 * * *" # run 6:30 AM IST everyday
 permissions:
   contents: write
 jobs:
-  publish:
+  check_blogs:
     runs-on: ubuntu-latest
+    outputs:
+      output1: ${{ steps.check_file_changed.outputs.workflows }}
     steps:
-      # git checkout
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
-          # ref: master
+          fetch-depth: 2
           repository: "Pranshu1902p/Pranshu1902p.github.io"
-      # setup python
       - name: setup python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.8
-      # installing the dependencies
+          python-version: 3.8 #install the python needed
       - name: install dependencies
         run: |
           python -m pip install 'requests'
           python -m pip install 'bs4'
-      # running the script
-      - name: execute py script
+      - name: execute py script # run the run.py to get the latest data
         run: |
           python ./.github/workflows/mediumBlogsFetch.py
-      # pushing the update code
+
+      - shell: pwsh
+        # Give an id to the step, so we can reference it later
+        id: check_file_changed
+        run: |
+          # Diff HEAD with the previous commit
+          $diff = git diff --name-only HEAD^ HEAD
+
+          # Check if a file under docs/ or with the .md extension has changed (added, modified, deleted)
+          $SourceDiff = $diff | Where-Object { $_ -match '.json$' }
+          $HasDiff = $SourceDiff.Length -gt 0
+
+          # Set the output named "workflows"
+          Write-Host "::set-output name=workflows::$HasDiff"
+
+  publish:
+    runs-on: ubuntu-latest
+    needs: check_blogs
+    if: needs.check_blogs.outputs.output1 == 'True' # push if file has changes
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          repository: "Pranshu1902p/Pranshu1902p.github.io"
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8 #install the python needed
+      - name: install dependencies
+        run: |
+          python -m pip install 'requests'
+          python -m pip install 'bs4'
+      - name: execute py script # run the run.py to get the latest data
+        run: |
+          python ./.github/workflows/mediumBlogsFetch.py
       - name: switching from HTTPS to SSH
         run: |
           git config --local user.email "action@github.com"
