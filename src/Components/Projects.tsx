@@ -27,12 +27,10 @@ import MoneyManager1 from "../Images/projects/money_manager1.png";
 import MoneyManager2 from "../Images/projects/money_manager2.png";
 import PChat from "../Images/projects/p_chat.png";
 import TheGladdenProject from "../Images/projects/gladdenproject.png";
-import TaskManager from "../Images/projects/task_manager.png";
 import MartialArts from "../Images/projects/martial arts.png";
 import Jarvis from "../Images/projects/jarvis.png";
 import Breakout from "../Images/projects/breakout.png";
 import MazeSolver from "../Images/projects/maze.png";
-import Atm from "../Images/projects/atm.png";
 import Carousal from "./Common/Carousal";
 
 export default function Projects() {
@@ -156,15 +154,6 @@ export default function Projects() {
       tech: [{ name: "JavaScript" }],
     },
     {
-      name: "Task Manager",
-      description:
-        "Ever felt like you have a lot of tasks and not able to keep record of all of them? Well maybe you write down the tasks on a paper but to put them with priority and update them constantly can be hectic on paper. That's why I made this.",
-      link: "https://pranshu19-task-manager.herokuapp.com/",
-      githubLink: "https://github.com/Pranshu1902/WD-202-Task-Manager/",
-      image: [TaskManager],
-      tech: [{ name: "Django" }, { name: "Tailwind" }],
-    },
-    {
       name: "Martial Arts Simulator",
       description:
         "This is an online game where I have simulted a martial artist with some commands like kick, punch, block, etc.",
@@ -198,13 +187,6 @@ export default function Projects() {
         "This AI solves the maze using Depth-First Search and Breadth-First Search and returns an image comparing both algorithms. I have also made a GUI for this.",
       githubLink: "https://github.com/Pranshu1902/Maze-Solver",
       image: [MazeSolver],
-      tech: [{ name: "Python" }, { name: "Tkinter" }],
-    },
-    {
-      name: "ATM",
-      description: "Built a GUI based ATM which stores data in a csv file.",
-      githubLink: "https://github.com/Pranshu1902/ATM",
-      image: [Atm],
       tech: [{ name: "Python" }, { name: "Tkinter" }],
     },
   ];
