@@ -211,7 +211,6 @@ export default function Projects() {
 
   const filters: linkType[] = [
     { title: "Home", active: false, link: "/" },
-    { title: "About", active: false, link: "/about" },
     { title: "Blogs", active: false, link: "/blogs" },
     { title: "Projects", active: true, link: "/projects" },
     { title: "Experience", active: false, link: "/experience" },

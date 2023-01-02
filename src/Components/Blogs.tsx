@@ -7,7 +7,6 @@ import data from "./blog.json";
 export default function Blogs() {
   const filters: linkType[] = [
     { title: "Home", active: false, link: "/" },
-    { title: "About", active: false, link: "/about" },
     { title: "Blogs", active: true, link: "/blogs" },
     { title: "Projects", active: false, link: "/projects" },
     { title: "Experience", active: false, link: "/experience" },

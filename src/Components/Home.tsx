@@ -41,7 +41,6 @@ export default function Home() {
 
   const filters: linkType[] = [
     { title: "Home", active: true, link: "/" },
-    { title: "About", active: false, link: "/about" },
     { title: "Blogs", active: false, link: "/blogs" },
     { title: "Projects", active: false, link: "/projects" },
     { title: "Experience", active: false, link: "/experience" },
@@ -99,61 +98,68 @@ export default function Home() {
         </div>
 
         {/* About me */}
-        <div className="flex flex-col md:flex-row-reverse justify-center items-center gap-4 w-full">
-          <div className="flex flex-col gap-4 md:w-1/2 justify-center text-xl">
-            <h1 className="text-3xl font-bold text-[#ccd6f6]">About Me</h1>
-            <hr />
-            <div className="pt-6">
-              <p>
-                Hello, I'm Pranshu, a sophomore CS undergrad at VIT, Chennai.
-              </p>
+        <div className="pl-12 h-full pb-24">
+          <div className="flex flex-col-reverse md:flex-row-reverse justify-center items-center gap-4 w-full h-full">
+            <div className="flex flex-col gap-4 md:w-1/2 justify-center text-xl">
+              <h1 className="text-3xl font-bold text-[#ccd6f6]">About Me</h1>
+              <hr />
+              <div className="pt-6">
+                <p>
+                  Hello, I'm Pranshu, a sophomore CS undergrad at VIT, Chennai.
+                </p>
+              </div>
+              <div>
+                <p>
+                  I am a self-taught programmer. Started learning to code as a
+                  hobby rather than a career focus. I build websites for people
+                  from all walks of life. Primarily using Django, MERN stack.
+                </p>
+              </div>
+              <div>
+                <p>
+                  I also write&nbsp;
+                  <Link
+                    href="/blogs"
+                    className="text-[#64ffda] txt hover:underline transition duration-1000"
+                  >
+                    blogs
+                  </Link>
+                  .
+                </p>
+              </div>
+              <div>
+                <p>
+                  I'm a GDC Fellow '22 and Teaching Assistant @
+                  <a
+                    href="https://www.pupilfirst.org/"
+                    rel="noreferrer"
+                    target={"_blank"}
+                    className="text-[#64ffda] txt hover:underline transition duration-1000"
+                  >
+                    Pupilfirst
+                  </a>
+                  &nbsp; working with &nbsp;
+                  <a
+                    href="https://www.aicte-india.org/"
+                    rel="noreferrer"
+                    target={"_blank"}
+                    className="text-[#64ffda] txt hover:underline transition duration-1000"
+                  >
+                    AICTE
+                  </a>
+                  &nbsp; as a full-stack web developer.
+                </p>
+                <p>Entrepreneurship and self-help books enthusiast.</p>
+              </div>
             </div>
-            <div>
-              <p>I build websites.</p>
+            <div className="md:w-1/2 flex justify-center items-center">
+              <img
+                src={profile}
+                alt="profile"
+                width={"40%"}
+                className="rounded-sm border-2 border-[#64ffda] md:p-3"
+              />
             </div>
-            <div>
-              <p>
-                I'm a GDC Fellow '22 @
-                <a
-                  href="https://www.pupilfirst.org/"
-                  rel="noreferrer"
-                  target={"_blank"}
-                  className="text-[#64ffda] txt hover:underline transition duration-1000"
-                >
-                  Pupilfirst
-                </a>
-                &nbsp; working with &nbsp;
-                <a
-                  href="https://www.aicte-india.org/"
-                  rel="noreferrer"
-                  target={"_blank"}
-                  className="text-[#64ffda] txt hover:underline transition duration-1000"
-                >
-                  AICTE
-                </a>
-                &nbsp; as a full-stack web developer.
-              </p>
-            </div>
-            <div>
-              <p>
-                I also write &nbsp;
-                <Link
-                  href="/blogs"
-                  className="text-[#64ffda] txt hover:underline transition duration-1000"
-                >
-                  blogs
-                </Link>
-                .
-              </p>
-            </div>
-          </div>
-          <div className="md:w-1/2 flex justify-center items-center">
-            <img
-              src={profile}
-              alt="profile"
-              width={"40%"}
-              className="rounded-sm border-2 border-[#64ffda] md:p-3"
-            />
           </div>
         </div>
 
