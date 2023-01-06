@@ -19,7 +19,7 @@ export default function Header(props: { filters: linkType[] }) {
   };
 
   return (
-    <div className="p-6 flex justify-between bg-[#0a192f] shadow border-b-2 border-[#01d293] fixed w-full z-10 mb-12">
+    <div className="pl-6 pr-6 p-3 md:p-6 flex justify-between bg-[#0a192f] shadow border-b-2 border-[#01d293] fixed w-full z-10 mb-12">
       <div>
         <p
           style={{ height: "50px", width: "50px", fontSize: "25px" }}
