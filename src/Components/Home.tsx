@@ -12,6 +12,7 @@ import Typescript from "../Images/tech/typescript.svg";
 import Tailwind from "../Images/tech/tailwindcss.svg";
 import JavaScript from "../Images/tech/js.png";
 import Python from "../Images/tech/python.png";
+import jQuery from "../Images/tech/jquery.png";
 import threejs from "../Images/tech/threejs.png";
 import blender from "../Images/tech/blender.png";
 import androidStudio from "../Images/tech/androidStudio.png";
@@ -33,6 +34,7 @@ export default function Home() {
     { name: "TypeScript", img: Typescript },
     { name: "JavaScript", img: JavaScript },
     { name: "Python", img: Python },
+    { name: "jQuery", img: jQuery },
     { name: "Kotlin", img: kotlin },
     { name: "Android Studio", img: androidStudio },
     { name: "ThreeJs", img: threejs },
