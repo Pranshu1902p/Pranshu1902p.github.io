@@ -205,7 +205,7 @@ export default function Projects() {
   return (
     <div className="absolute bg-gradient-to-br from-[#0a192f] via-[#0a192f] to-[#112240] text-[#c5c6c7] w-full min-h-screen">
       <Header filters={filters} />
-      <div className="w-full p-4 pb-24 md:p-24 flex flex-col gap-4">
+      <div className="w-full p-4 fadeIn mt-20 md:mt-12 pb-24 md:p-24 flex flex-col gap-4">
         <div
           style={{ paddingBottom: "3%" }}
           className="flex flex-row pt-6 justify-start items-center"
@@ -215,7 +215,7 @@ export default function Projects() {
             alt="code logo"
             className="bg-transparent w-1/6 flex"
           />
-          <h1 className="text-[#66fcf1] font-bold flex text-5xl md:text-8xl">
+          <h1 className="text-[#66fcf1] font-bold flex text-5xl md:text-7xl">
             Projects
           </h1>
         </div>

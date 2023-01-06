@@ -19,7 +19,7 @@ export default function Header(props: { filters: linkType[] }) {
   };
 
   return (
-    <div className="p-6 flex justify-between">
+    <div className="p-6 flex justify-between bg-[#0a192f] shadow border-b-2 border-[#01d293] fixed w-full z-10 mb-12">
       <div>
         <p
           style={{ height: "50px", width: "50px", fontSize: "25px" }}
@@ -29,7 +29,7 @@ export default function Header(props: { filters: linkType[] }) {
         </p>
       </div>
       {/* Desktop View */}
-      <div className="hidden md:block fadeIn">
+      <div className="hidden md:block">
         <div className="flex flex-row gap-12 text-xl justify-end text-[#c5c6c7]">
           {props.filters.map((filter) => (
             <Link
@@ -43,36 +43,6 @@ export default function Header(props: { filters: linkType[] }) {
               {filter.title}
             </Link>
           ))}
-          {/* <Link
-            href="/"
-            className="hover:text-[#66fcf1] flex items-center hover:border-b-2 hover:border-[#66fcf1] transition duration-500"
-          >
-            Home
-          </Link>
-          <Link
-            href="/about"
-            className="hover:text-[#66fcf1] flex items-center hover:border-b-2 hover:border-[#66fcf1] transition duration-500"
-          >
-            About
-          </Link>
-          <Link
-            href="/blogs"
-            className="hover:text-[#66fcf1] flex items-center hover:border-b-2 hover:border-[#66fcf1] transition duration-500"
-          >
-            Blogs
-          </Link>
-          <Link
-            href="/projects"
-            className="hover:text-[#66fcf1] flex items-center hover:border-b-2 hover:border-[#66fcf1] transition duration-500"
-          >
-            Projects
-          </Link>
-          <Link
-            href="/experience"
-            className="hover:text-[#66fcf1] flex items-center hover:border-b-2 hover:border-[#66fcf1] transition duration-500"
-          >
-            Experience
-          </Link> */}
           <button
             className="hover:bg-[#112240] transition duration-300 flex justify-center w-36 border-2 border-[#01d293] text-[#01d293] p-2 rounded-lg"
             onClick={onButtonClick}

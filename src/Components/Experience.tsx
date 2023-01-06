@@ -143,14 +143,14 @@ export default function Experience() {
     <div className="absolute bg-gradient-to-br from-[#0a192f] via-[#0a192f] to-[#112240] text-[#c5c6c7] w-full min-h-screen">
       {/* Header */}
       <Header filters={filters} />
-      <div className="p-4 md:p-24 flex flex-col gap-4 justify-start">
+      <div className="p-4 md:p-24 fadeIn mt-20 md:mt-12 flex flex-col gap-4 justify-start">
         {/* Intro */}
-        <div className="flex flex-row gap-2 md:p-12 w-full items-center">
+        <div className="flex flex-row gap-2 md:pb-12 w-full items-center">
           <div className="flex justify-center items-center w-1/3 md:w-1/5">
             <img className="bg-transparent" src={experienceLogo} alt="" />
           </div>
           <div className="flex flex-col gap-4 justify-center items-center">
-            <h1 className="text-[#66fcf1] font-bold text-5xl md:text-6xl">
+            <h1 className="text-[#66fcf1] font-bold text-5xl md:text-7xl">
               Experience
             </h1>
           </div>

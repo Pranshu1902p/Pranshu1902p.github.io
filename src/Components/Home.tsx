@@ -56,7 +56,7 @@ export default function Home() {
     <div className="absolute bg-gradient-to-br from-[#0a192f] via-[#0a192f] to-[#112240] text-[#c5c6c7] w-full min-h-screen">
       {/* Header */}
       <Header filters={filters} />
-      <div className="pt-6 pb-24 p-4 md:p-24 flex flex-col gap-4 justify-center items-center w-full">
+      <div className="pt-6 mt-24 pb-24 p-4 fadeIn md:p-24 flex flex-col gap-4 justify-center items-center w-full">
         {/* Intro */}
         <div className="flex flex-col-reverse md:flex-row gap-4 pb-48 justify-center items-center">
           <div className="flex flex-col gap-4 justify-start items-start">

@@ -3,6 +3,7 @@ import { linkType } from "../Types/DataType";
 import Footer from "./Common/Footer";
 import Header from "./Common/Header";
 import data from "./blog.json";
+import logo from "../blog.png";
 
 export default function Blogs() {
   const filters: linkType[] = [
@@ -20,16 +21,14 @@ export default function Blogs() {
     <div className="absolute bg-gradient-to-br from-[#0a192f] via-[#0a192f] to-[#112240] text-[#c5c6c7] w-full min-h-screen">
       {/* Header */}
       <Header filters={filters} />
-      <div className="pt-6 pb-24 p-4 md:p-24 flex flex-col gap-4 w-full">
+      <div className="pt-6 mt-20 md:mt-12 pb-24 fadeIn p-4 md:p-24 flex flex-col gap-4 w-full">
         <div style={{ paddingBottom: "3%" }} className="flex flex-row pt-6">
-          <h1 className="text-[#66fcf1] font-bold flex text-5xl md:text-8xl">
+          <img src={logo} alt="blog logo" className="bg-transparent w-1/6 flex" />
+          <h1 className="text-[#66fcf1] font-bold flex text-5xl md:text-7xl items-center">
             Blogs
           </h1>
         </div>
-        <div
-          className="text-3xl"
-          style={{ paddingBottom: "15%" }}
-        >
+        <div className="text-3xl" style={{ paddingBottom: "15%" }}>
           Some of my latest blogs
         </div>
         <div className="flex flex-col gap-12">
