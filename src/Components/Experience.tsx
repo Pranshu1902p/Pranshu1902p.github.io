@@ -136,6 +136,8 @@ export default function Experience() {
   ];
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+
     document.title = "Experience | Pranshu Aggarwal";
   }, []);
 

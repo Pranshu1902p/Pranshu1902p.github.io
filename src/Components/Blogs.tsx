@@ -14,6 +14,8 @@ export default function Blogs() {
   ];
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+
     document.title = "Blogs | Pranshu Aggarwal";
   });
 
@@ -23,7 +25,11 @@ export default function Blogs() {
       <Header filters={filters} />
       <div className="pt-6 mt-20 md:mt-12 pb-24 fadeIn p-4 md:p-24 flex flex-col gap-4 w-full">
         <div style={{ paddingBottom: "3%" }} className="flex flex-row pt-6">
-          <img src={logo} alt="blog logo" className="bg-transparent w-1/6 flex" />
+          <img
+            src={logo}
+            alt="blog logo"
+            className="bg-transparent w-1/6 flex"
+          />
           <h1 className="text-[#66fcf1] font-bold flex text-5xl md:text-7xl items-center">
             Blogs
           </h1>
