@@ -18,6 +18,7 @@ import blender from "../Images/tech/blender.png";
 import androidStudio from "../Images/tech/androidStudio.png";
 import kotlin from "../Images/tech/kotlin.png";
 import express from "../Images/tech/expressjs.png";
+import figma from "../Images/tech/figma.png";
 import { linkType } from "../Types/DataType";
 import { TypeAnimation } from "react-type-animation";
 import { Link } from "raviger";
@@ -38,6 +39,7 @@ export default function Home() {
     { name: "Kotlin", img: kotlin },
     { name: "Android Studio", img: androidStudio },
     { name: "ThreeJs", img: threejs },
+    { name: "Figma", img: figma },
     { name: "Blender", img: blender },
   ];
 
@@ -132,27 +134,6 @@ export default function Home() {
                 </p>
               </div>
               <div>
-                <p>
-                  I'm a GDC Fellow '22 and Teaching Assistant @
-                  <a
-                    href="https://www.pupilfirst.org/"
-                    rel="noreferrer"
-                    target={"_blank"}
-                    className="text-[#64ffda] txt hover:underline transition duration-1000"
-                  >
-                    Pupilfirst
-                  </a>
-                  &nbsp; working with &nbsp;
-                  <a
-                    href="https://www.aicte-india.org/"
-                    rel="noreferrer"
-                    target={"_blank"}
-                    className="text-[#64ffda] txt hover:underline transition duration-1000"
-                  >
-                    AICTE
-                  </a>
-                  &nbsp; as a full-stack web developer.
-                </p>
                 <p>Entrepreneurship and self-help books enthusiast.</p>
               </div>
             </div>
