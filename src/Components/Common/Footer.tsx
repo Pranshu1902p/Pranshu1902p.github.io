@@ -12,11 +12,11 @@ export default function Footer() {
               <i className="fa fa-github hover:text-[#64ffda] hover:scale-125 transition duration-200"></i>
             </a>
             <a
-              href="https://twitter.com/pranshu1902/"
+              href="https://instagram.com/coding_with_developers/"
               target={"_blank"}
               rel="noreferrer"
             >
-              <i className="fa fa-twitter hover:text-[#64ffda] hover:scale-125 transition duration-200"></i>
+              <i className="fa fa-instagram hover:text-[#64ffda] hover:scale-125 transition duration-200"></i>
             </a>
             <a
               href="https://medium.com/@pranshu1902/"
@@ -26,19 +26,26 @@ export default function Footer() {
               <i className="fa fa-medium hover:text-[#64ffda] hover:scale-125 transition duration-200"></i>
             </a>
             <a
+              href="https://twitter.com/pranshu1902/"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              <i className="fa fa-twitter hover:text-[#64ffda] hover:scale-125 transition duration-200"></i>
+            </a>
+            <a
               href="https://www.linkedin.com/in/pranshu1902/"
               target={"_blank"}
               rel="noreferrer"
             >
               <i className="fa fa-linkedin hover:text-[#64ffda] hover:scale-125 transition duration-200"></i>
             </a>
-            <a
+            {/* <a
               href="https://stackoverflow.com/users/15925350/pranshu-aggarwal"
               target={"_blank"}
               rel="noreferrer"
             >
               <i className="fa fa-stack-overflow hover:text-[#64ffda] hover:scale-125 transition duration-200"></i>
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="w-full flex justify-center items-center text-md">

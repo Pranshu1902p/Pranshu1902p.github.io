@@ -207,9 +207,8 @@ export default function Projects() {
   return (
     <div className="absolute bg-gradient-to-br from-[#0a192f] via-[#0a192f] to-[#112240] text-[#c5c6c7] w-full min-h-screen">
       <Header filters={filters} />
-      <div className="w-full p-4 fadeIn mt-20 md:mt-12 pb-24 md:p-24 flex flex-col gap-4">
+      <div className="w-full p-4 fadeIn mt-20 md:mt-12 pb-36 md:p-24 flex flex-col gap-4">
         <div
-          style={{ paddingBottom: "3%" }}
           className="flex flex-row pt-6 justify-start items-center"
         >
           <img
