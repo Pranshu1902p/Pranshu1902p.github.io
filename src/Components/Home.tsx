@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import profile from "../Images/profile.jpg";
 import Footer from "./Common/Footer";
 import Header from "./Common/Header";
-import computerLogo from "../computer.png";
+import computerLogo from "../coding.gif";
 import mongo from "../Images/tech/mongodb.png";
 import Nextjs from "../Images/tech/nextjs.png";
 import React from "../Images/tech/React.png";
@@ -68,10 +68,11 @@ export default function Home() {
               Hi, I am
             </p>
             <h1 className="text-[#66fcf1] font-bold text-5xl md:text-7xl">
+              Pranshu Aggarwal
+            </h1>
+            <h1 className="text-[#01d293] font-medium text-2xl md:text-4xl">
               <TypeAnimation
                 sequence={[
-                  "Pranshu Aggarwal",
-                  2000,
                   "A Self-taught programmer",
                   2000,
                   "A Tech Enthusiast",
@@ -99,7 +100,11 @@ export default function Home() {
             </a>
           </div>
           <div className="flex justify-center items-center w-3/4">
-            <img className="bg-transparent" src={computerLogo} alt="" />
+            <img
+              className="bg-transparent rounded-lg"
+              src={computerLogo}
+              alt=""
+            />
           </div>
         </div>
 
