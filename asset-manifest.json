@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.e7bd1197.css",
-    "main.js": "/static/js/main.0645b421.js",
+    "main.css": "/static/css/main.771db506.css",
+    "main.js": "/static/js/main.a9493d27.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/coding.gif": "/static/media/coding.54de1c2854e13f48aaaa.gif",
     "static/media/profile.jpg": "/static/media/profile.91a4a0ee8e2b5eda43ba.jpg",
     "static/media/unilink1.png": "/static/media/unilink1.cf23fddf7039f7c0cfa5.png",
     "static/media/gladdenproject.png": "/static/media/gladdenproject.8af36fc505296020d9e8.png",
@@ -32,7 +33,6 @@
     "static/media/ecell.png": "/static/media/ecell.021d8ff7b8857e42aed6.png",
     "static/media/money_manager1.png": "/static/media/money_manager1.1fe9d6d32574dbe2187e.png",
     "static/media/unilink3.png": "/static/media/unilink3.5343e06f7220c9ef9f9e.png",
-    "static/media/computer.png": "/static/media/computer.9e19d6683bcbd6dde620.png",
     "static/media/biosphere.png": "/static/media/biosphere.ba740e67aa97e6ecaf4b.png",
     "service-worker.js": "/service-worker.js",
     "static/media/django.png": "/static/media/django.c2b351f1472bcf999b3c.png",
@@ -57,12 +57,12 @@
     "static/media/tailwindcss.svg": "/static/media/tailwindcss.50fbcf516b9a3774e9a83272167059ae.svg",
     "index.html": "/index.html",
     "static/media/typescript.svg": "/static/media/typescript.22b4f22ec3ee32c08fb2c0a25682bb5b.svg",
-    "main.e7bd1197.css.map": "/static/css/main.e7bd1197.css.map",
-    "main.0645b421.js.map": "/static/js/main.0645b421.js.map",
+    "main.771db506.css.map": "/static/css/main.771db506.css.map",
+    "main.a9493d27.js.map": "/static/js/main.a9493d27.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7bd1197.css",
-    "static/js/main.0645b421.js"
+    "static/css/main.771db506.css",
+    "static/js/main.a9493d27.js"
   ]
 }
