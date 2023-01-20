@@ -22,6 +22,8 @@ import figma from "../Images/tech/figma.png";
 import { linkType } from "../Types/DataType";
 import { TypeAnimation } from "react-type-animation";
 import { Link } from "raviger";
+import { Tooltip as ReactTooltip } from "react-tooltip";
+import "react-tooltip/dist/react-tooltip.css";
 
 export default function Home() {
   const technologies = [
@@ -161,8 +163,22 @@ export default function Home() {
           <div className="flex flex-wrap md:flex-row gap-8 p-6">
             {technologies.map((tech) => (
               <div className="flex flex-row gap-4 justify-center items-center hover:scale-110 transition duration-300">
-                <img src={tech.img} width={50} height={40} alt="" />
-                <p>{tech.name}</p>
+                <img
+                  id={tech.name}
+                  src={tech.img}
+                  width={50}
+                  height={40}
+                  alt=""
+                />
+                <ReactTooltip
+                  anchorId={tech.name}
+                  place="bottom"
+                  style={{
+                    backgroundColor: "#171a26",
+                    color: "#66fcf1",
+                  }}
+                  content={tech.name}
+                />
               </div>
             ))}
           </div>
