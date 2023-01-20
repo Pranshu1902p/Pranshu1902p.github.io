@@ -111,7 +111,7 @@ export default function Home() {
         </div>
 
         {/* About me */}
-        <div className="pl-12 h-full pb-24">
+        <div className="h-full pb-24">
           <div className="flex flex-col-reverse md:flex-row-reverse justify-center items-center gap-4 w-full h-full">
             <div className="flex flex-col gap-4 md:w-1/2 justify-center text-xl">
               <h1 className="text-3xl font-bold text-[#ccd6f6]">About Me</h1>
