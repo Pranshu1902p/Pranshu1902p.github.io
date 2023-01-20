@@ -110,7 +110,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* About me */}
+        {/* About Me */}
         <div className="h-full pb-24">
           <div className="flex flex-col-reverse md:flex-row-reverse justify-center items-center gap-4 w-full h-full">
             <div className="flex flex-col gap-4 md:w-1/2 justify-center text-xl">
