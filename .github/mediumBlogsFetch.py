@@ -14,7 +14,7 @@ intros = noStarchSoup.select("a > div > p")
 data = noStarchSoup.select("a > div > img")
 
 for blog in range(0,end,2):
-    blogs.append({"title": data[blog].get("alt"), "image": data[blog].get("src"), "url": "https://medium.com"+data[blog].parent.parent.get("href"), "intro": intros[blog].text})
+    blogs.append({"title": data[blog].get("alt"), "image": data[blog].get("src"), "url": "https://medium.com"+data[blog].parent.parent.get("href"), "intro": intros[blog//2].text})
 
 with open("./src/Components/blog.json", "w") as f:
     f.write("[")
