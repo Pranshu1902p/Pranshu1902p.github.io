@@ -4,7 +4,6 @@ import Header from "./Common/Header";
 import experienceLogo from "../experience.png";
 import { experienceType, linkType } from "../Types/DataType";
 import egov from "../Images/experience/egov.png";
-import unilink from "../Images/experience/unilink.png";
 import gdsc from "../Images/experience/gdsc.png";
 import pupilfirst from "../Images/experience/pupilfirst.png";
 import MIC from "../Images/experience/mic.png";
@@ -36,17 +35,6 @@ export default function Experience() {
       startDate: "Oct 2022",
       endDate: "Present",
     },
-    {
-      name: "Uni-Link",
-      image: unilink,
-      description:
-        "Unilink helps connect college students in a professional way ensuring that they have an enriching experience at college.",
-      position: "Co-Founder",
-      tech: ["Entrepreneurship", "Leadership", "Web Dev"],
-      startDate: "Oct 2022",
-      endDate: "Present",
-    },
-
     {
       name: "Pupilfirst",
       image: pupilfirst,

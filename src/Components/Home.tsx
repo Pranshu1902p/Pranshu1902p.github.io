@@ -19,11 +19,10 @@ import androidStudio from "../Images/tech/androidStudio.png";
 import kotlin from "../Images/tech/kotlin.png";
 import express from "../Images/tech/expressjs.png";
 import figma from "../Images/tech/figma.png";
+import tensorflow from "../Images/tech/tensorflow.png";
 import { linkType } from "../Types/DataType";
 import { TypeAnimation } from "react-type-animation";
 import { Link } from "raviger";
-import { Tooltip as ReactTooltip } from "react-tooltip";
-import "react-tooltip/dist/react-tooltip.css";
 
 export default function Home() {
   const technologies = [
@@ -37,6 +36,7 @@ export default function Home() {
     { name: "TypeScript", img: Typescript },
     { name: "JavaScript", img: JavaScript },
     { name: "Python", img: Python },
+    { name: "TensorFlow", img: tensorflow },
     { name: "jQuery", img: jQuery },
     { name: "Kotlin", img: kotlin },
     { name: "Android Studio", img: androidStudio },
@@ -129,6 +129,9 @@ export default function Home() {
                 </p>
               </div>
               <div>
+                <p>Interested in Machine Learning.</p>
+              </div>
+              <div>
                 <p>
                   I also write&nbsp;
                   <Link
@@ -139,9 +142,6 @@ export default function Home() {
                   </Link>
                   .
                 </p>
-              </div>
-              <div>
-                <p>Entrepreneurship and self-help books enthusiast.</p>
               </div>
             </div>
             <div className="md:w-1/2 flex justify-center items-center">
@@ -162,7 +162,7 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap md:flex-row gap-8 p-6">
             {technologies.map((tech) => (
-              <div className="flex flex-row gap-4 justify-center items-center hover:scale-110 transition duration-300">
+              <div className="flex flex-col gap-4 justify-center items-center hover:scale-110 transition duration-300">
                 <img
                   id={tech.name}
                   src={tech.img}
@@ -170,15 +170,7 @@ export default function Home() {
                   height={40}
                   alt=""
                 />
-                <ReactTooltip
-                  anchorId={tech.name}
-                  place="bottom"
-                  style={{
-                    backgroundColor: "#171a26",
-                    color: "#66fcf1",
-                  }}
-                  content={tech.name}
-                />
+                <p className="">{tech.name}</p>
               </div>
             ))}
           </div>
