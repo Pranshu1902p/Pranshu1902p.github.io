@@ -1,18 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.c2f1b871.css",
-    "main.js": "/static/js/main.e99a243a.js",
+    "main.js": "/static/js/main.8e0bd8cc.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/coding.gif": "/static/media/coding.54de1c2854e13f48aaaa.gif",
     "static/media/profile.jpg": "/static/media/profile.91a4a0ee8e2b5eda43ba.jpg",
     "static/media/unilink1.png": "/static/media/unilink1.cf23fddf7039f7c0cfa5.png",
-    "static/media/vibrance3.png": "/static/media/vibrance3.aaef57b5cc3cc8b664e3.png",
     "static/media/gladdenproject.png": "/static/media/gladdenproject.8af36fc505296020d9e8.png",
     "static/media/breakout.png": "/static/media/breakout.802319283b72155c2fae.png",
-    "static/media/vibrance5.png": "/static/media/vibrance5.49345177ca457bf094e3.png",
-    "static/media/vibrance6.png": "/static/media/vibrance6.1bd0972e6e836fd795e4.png",
-    "static/media/vibrance2.png": "/static/media/vibrance2.d9e0fd5594a3d56ca2ea.png",
-    "static/media/vibrance4.png": "/static/media/vibrance4.c65300eb26318aefcc0a.png",
     "static/media/p_chat.png": "/static/media/p_chat.7cff8a277d867f3d4aaa.png",
     "static/media/martial arts.png": "/static/media/martial arts.669a11835f8652688af7.png",
     "static/media/voting2.png": "/static/media/voting2.138d45b5168e06bfcd92.png",
@@ -23,7 +18,6 @@
     "static/media/voting1.png": "/static/media/voting1.8bd3473d16daf69651cf.png",
     "static/media/books_world3.png": "/static/media/books_world3.97d41fd62f131f167e62.png",
     "static/media/bizzcard2.png": "/static/media/bizzcard2.06fa51d40f01b6c5dcad.png",
-    "static/media/vibrance1.png": "/static/media/vibrance1.c231e4a6c2fe3d6280c6.png",
     "static/media/thegladdenproject.png": "/static/media/thegladdenproject.fae2acf292fcb895735a.png",
     "static/media/care.png": "/static/media/care.c5cb9bbc3972c349c5a8.png",
     "static/media/React.png": "/static/media/React.81ed438b18e24116794d.png",
@@ -65,11 +59,11 @@
     "index.html": "/index.html",
     "static/media/typescript.svg": "/static/media/typescript.22b4f22ec3ee32c08fb2c0a25682bb5b.svg",
     "main.c2f1b871.css.map": "/static/css/main.c2f1b871.css.map",
-    "main.e99a243a.js.map": "/static/js/main.e99a243a.js.map",
+    "main.8e0bd8cc.js.map": "/static/js/main.8e0bd8cc.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c2f1b871.css",
-    "static/js/main.e99a243a.js"
+    "static/js/main.8e0bd8cc.js"
   ]
 }
