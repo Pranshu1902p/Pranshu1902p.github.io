@@ -3,6 +3,7 @@ import Footer from "./Common/Footer";
 import Header from "./Common/Header";
 import experienceLogo from "../experience.png";
 import { experienceType, linkType } from "../Types/DataType";
+import microsoft from "../Images/experience/microsoft.png";
 import egov from "../Images/experience/egov.png";
 import gdsc from "../Images/experience/gdsc.png";
 import pupilfirst from "../Images/experience/pupilfirst.png";
@@ -15,6 +16,16 @@ import Biosphere from "../Images/experience/biosphere.png";
 
 export default function Experience() {
   const experiences: experienceType[] = [
+    {
+      name: "Microsoft",
+      image: microsoft,
+      description:
+        "Part of the amazing community from all around the world and exploring Microsoft Products.",
+      position: "Microsoft Learn Student Ambassador",
+      tech: ["Microsoft Learn", "Teamwork"],
+      startDate: "Apr 2023",
+      endDate: "Present",
+    },
     {
       name: "eGov Foundation",
       image: egov,
