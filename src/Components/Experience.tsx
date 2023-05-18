@@ -17,6 +17,16 @@ import Biosphere from "../Images/experience/biosphere.png";
 export default function Experience() {
   const experiences: experienceType[] = [
     {
+      name: "Android Club",
+      image: Android,
+      description:
+        "Technical Lead of the club core committee. Taught students and leaded team to build great products.",
+      position: "Technical Lead",
+      tech: ["React", "React Native", "JavaScript", "NodeJS", "Tailwind"],
+      startDate: "May 2023",
+      endDate: "Present",
+    },
+    {
       name: "Microsoft",
       image: microsoft,
       description:
@@ -83,7 +93,7 @@ export default function Experience() {
       position: "Member of Tech Team",
       tech: ["React", "React Native", "JavaScript", "NodeJS", "Tailwind"],
       startDate: "Jul 2022",
-      endDate: "Present",
+      endDate: "May 2023",
     },
     {
       name: "VITrendz",
