@@ -20,9 +20,9 @@ export default function Experience() {
       name: "Android Club",
       image: Android,
       description:
-        "Technical Lead of the club core committee. Taught students and leaded team to build great products.",
+        "Leaded a team of developers to build great products.",
       position: "Technical Lead",
-      tech: ["React", "React Native", "JavaScript", "NodeJS", "Tailwind"],
+      tech: ["Leadership", "Team Management", "React Native"],
       startDate: "May 2023",
       endDate: "Present",
     },
