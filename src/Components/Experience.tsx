@@ -3,6 +3,7 @@ import Footer from "./Common/Footer";
 import Header from "./Common/Header";
 import experienceLogo from "../experience.png";
 import { experienceType, linkType } from "../Types/DataType";
+import gssoc from "../Images/experience/gssoc.png";
 import microsoft from "../Images/experience/microsoft.png";
 import egov from "../Images/experience/egov.png";
 import gdsc from "../Images/experience/gdsc.png";
@@ -16,6 +17,16 @@ import Biosphere from "../Images/experience/biosphere.png";
 
 export default function Experience() {
   const experiences: experienceType[] = [
+    {
+      name: "GirlScript Summer of Code",
+      image: gssoc,
+      description:
+        "Mentor for the open source contributions team for duration of 3 months.",
+      position: "Mentor",
+      tech: ["Leadership", "Team Management", "Open Source"],
+      startDate: "May 2023",
+      endDate: "Present",
+    },
     {
       name: "Android Club",
       image: Android,
