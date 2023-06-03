@@ -170,9 +170,8 @@ export default function Home() {
                   src={tech.img}
                   width={50}
                   height={40}
-                  alt=""
+                  alt={tech.name}
                 />
-                <p className="">{tech.name}</p>
               </div>
             ))}
           </div>
