@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c2f1b871.css",
-    "main.js": "/static/js/main.4786a7e2.js",
+    "main.js": "/static/js/main.d0f9c799.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/coding.gif": "/static/media/coding.54de1c2854e13f48aaaa.gif",
     "static/media/profile.jpg": "/static/media/profile.91a4a0ee8e2b5eda43ba.jpg",
@@ -14,6 +14,7 @@
     "static/media/voting3.png": "/static/media/voting3.03ffbd3e0255c4ecad2e.png",
     "static/media/voting5.png": "/static/media/voting5.10ad321b1f275818e516.png",
     "static/media/voting4.png": "/static/media/voting4.b91201b3605b2be6145c.png",
+    "static/media/azure.png": "/static/media/azure.5a694f18b0e4f276ce48.png",
     "static/media/books_world1.png": "/static/media/books_world1.4c490c5d24ec5113081c.png",
     "static/media/voting1.png": "/static/media/voting1.8bd3473d16daf69651cf.png",
     "static/media/books_world3.png": "/static/media/books_world3.97d41fd62f131f167e62.png",
@@ -61,11 +62,11 @@
     "index.html": "/index.html",
     "static/media/typescript.svg": "/static/media/typescript.22b4f22ec3ee32c08fb2c0a25682bb5b.svg",
     "main.c2f1b871.css.map": "/static/css/main.c2f1b871.css.map",
-    "main.4786a7e2.js.map": "/static/js/main.4786a7e2.js.map",
+    "main.d0f9c799.js.map": "/static/js/main.d0f9c799.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c2f1b871.css",
-    "static/js/main.4786a7e2.js"
+    "static/js/main.d0f9c799.js"
   ]
 }
