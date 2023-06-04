@@ -21,6 +21,7 @@ import express from "../Images/tech/expressjs.png";
 import figma from "../Images/tech/figma.png";
 import tensorflow from "../Images/tech/tensorflow.png";
 import langchain from "../Images/tech/langchain.png";
+import azure from "../Images/tech/azure.png";
 import { linkType } from "../Types/DataType";
 import { TypeAnimation } from "react-type-animation";
 import { Link } from "raviger";
@@ -39,6 +40,7 @@ export default function Home() {
     { name: "Python", img: Python },
     { name: "TensorFlow", img: tensorflow },
     { name: "LangChain", img: langchain },
+    { name: "Azure", img: azure },
     { name: "jQuery", img: jQuery },
     { name: "Kotlin", img: kotlin },
     { name: "Android Studio", img: androidStudio },

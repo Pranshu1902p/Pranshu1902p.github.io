@@ -21,7 +21,7 @@ export default function Experience() {
       name: "GirlScript Summer of Code",
       image: gssoc,
       description:
-        "Mentor for the open source contributions team for duration of 3 months.",
+        "Mentor for the open source contributions team for duration of 3 months. Mentored the project: CrazyCoder",
       position: "Mentor",
       tech: ["Leadership", "Team Management", "Open Source"],
       startDate: "May 2023",
