@@ -22,6 +22,8 @@ import figma from "../Images/tech/figma.png";
 import tensorflow from "../Images/tech/tensorflow.png";
 import langchain from "../Images/tech/langchain.png";
 import azure from "../Images/tech/azure.png";
+import flutter from "../Images/tech/flutter.png";
+import dart from "../Images/tech/dart.png";
 import { linkType } from "../Types/DataType";
 import { TypeAnimation } from "react-type-animation";
 import { Link } from "raviger";
@@ -44,6 +46,8 @@ export default function Home() {
     { name: "jQuery", img: jQuery },
     { name: "Kotlin", img: kotlin },
     { name: "Android Studio", img: androidStudio },
+    { name: "Flutter", img: flutter },
+    { name: "Dart", img: dart },
     { name: "ThreeJs", img: threejs },
     { name: "Figma", img: figma },
     { name: "Blender", img: blender },
@@ -164,7 +168,7 @@ export default function Home() {
           <p className="text-3xl text-[#ccd6f6] font-bold">
             Technologies I have worked with:
           </p>
-          <div className="flex flex-wrap md:flex-row gap-8 p-6">
+          <div className="flex flex-wrap md:flex-row gap-8 p-6 justify-center">
             {technologies.map((tech) => (
               <div className="flex flex-col gap-4 justify-center items-center hover:scale-110 transition duration-300">
                 <img
