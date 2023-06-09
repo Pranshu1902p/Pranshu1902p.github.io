@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c2f1b871.css",
-    "main.js": "/static/js/main.d0f9c799.js",
+    "main.js": "/static/js/main.d854d8e2.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/coding.gif": "/static/media/coding.54de1c2854e13f48aaaa.gif",
     "static/media/profile.jpg": "/static/media/profile.91a4a0ee8e2b5eda43ba.jpg",
@@ -38,6 +38,7 @@
     "static/media/biosphere.png": "/static/media/biosphere.ba740e67aa97e6ecaf4b.png",
     "service-worker.js": "/service-worker.js",
     "static/media/django.png": "/static/media/django.c2b351f1472bcf999b3c.png",
+    "static/media/flutter.png": "/static/media/flutter.e35b9894ab644396c065.png",
     "static/media/nodejs.png": "/static/media/nodejs.387d195b11b396c87977.png",
     "static/media/blender.png": "/static/media/blender.f077aabd563891408ce1.png",
     "static/media/js.png": "/static/media/js.31c81075366a39d39b47.png",
@@ -51,6 +52,7 @@
     "static/media/androidStudio.png": "/static/media/androidStudio.3ef81036c0206ad31300.png",
     "static/media/mongodb.png": "/static/media/mongodb.35453a6dcc86eb29cb40.png",
     "static/media/vitrendz.png": "/static/media/vitrendz.3e4575780d3d44bfb3fc.png",
+    "static/media/dart.png": "/static/media/dart.f00251a3d3eee7148f7a.png",
     "static/media/experience.png": "/static/media/experience.663e629d9dc5e2831bcc.png",
     "static/media/egov.png": "/static/media/egov.af29d2082f534b204a8d.png",
     "static/media/code.png": "/static/media/code.4f58cbfda9d70e2cbab1.png",
@@ -62,11 +64,11 @@
     "index.html": "/index.html",
     "static/media/typescript.svg": "/static/media/typescript.22b4f22ec3ee32c08fb2c0a25682bb5b.svg",
     "main.c2f1b871.css.map": "/static/css/main.c2f1b871.css.map",
-    "main.d0f9c799.js.map": "/static/js/main.d0f9c799.js.map",
+    "main.d854d8e2.js.map": "/static/js/main.d854d8e2.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c2f1b871.css",
-    "static/js/main.d0f9c799.js"
+    "static/js/main.d854d8e2.js"
   ]
 }
