@@ -84,7 +84,7 @@ export default function Experience() {
       position: "Member of Tech Team",
       tech: ["React", "Django", "JavaScript", "Tailwind"],
       startDate: "Aug 2022",
-      endDate: "Present",
+      endDate: "July 2023",
     },
     {
       name: "E-cell",
@@ -94,7 +94,7 @@ export default function Experience() {
       position: "Member of Tech Team",
       tech: ["React", "JavaScript", "Tailwind"],
       startDate: "Aug 2022",
-      endDate: "Present",
+      endDate: "July 2023",
     },
     {
       name: "Android Club",

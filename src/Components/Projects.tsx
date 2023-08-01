@@ -5,6 +5,7 @@ import codeLogo from "../code.png";
 import { linkType, projectType } from "../Types/DataType";
 
 // Import project images
+import web_verse from "../Images/projects/web-verse.png";
 import voting1 from "../Images/projects/voting1.png";
 import voting2 from "../Images/projects/voting2.png";
 import voting3 from "../Images/projects/voting3.png";
@@ -35,6 +36,18 @@ import Carousal from "./Common/Carousal";
 
 export default function Projects() {
   const projects: projectType[] = [
+    {
+      name: "Web-Verse",
+      description:
+        "Web-Verse is the complete back-end for an online university management system with features like hostel, course, faculty, etc. A group project built with @Kushagra102 and @Geoffrey-Anto under Android Club.",
+      githubLink: "https://github.com/Android-Club-VITC/webverse/tree/main/server",
+      image: [web_verse],
+      tech: [
+        { name: "ExpressJs" },
+        { name: "NodeJs" },
+        { name: "Prisma" },
+      ],
+    },
     {
       name: "Online Voting",
       description:
