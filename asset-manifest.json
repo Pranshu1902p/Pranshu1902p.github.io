@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c2f1b871.css",
-    "main.js": "/static/js/main.81e81a37.js",
+    "main.css": "/static/css/main.924f91f6.css",
+    "main.js": "/static/js/main.2564beed.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/coding.gif": "/static/media/coding.54de1c2854e13f48aaaa.gif",
     "static/media/profile.jpg": "/static/media/profile.91a4a0ee8e2b5eda43ba.jpg",
@@ -30,6 +30,7 @@
     "static/media/jarvis.png": "/static/media/jarvis.aaca92e1b2a78cc54e47.png",
     "static/media/mic.png": "/static/media/mic.c971fd1ea939a38e69e9.png",
     "static/media/books_world.png": "/static/media/books_world.bda6ac6dbe71ecf1c540.png",
+    "static/media/privagram.png": "/static/media/privagram.cdd299d60d555a303706.png",
     "static/media/web-verse.png": "/static/media/web-verse.a55e50dc58404bd6fd99.png",
     "static/media/unilink2.png": "/static/media/unilink2.b07ec485ffc6ce9fdd57.png",
     "static/media/ecell.png": "/static/media/ecell.021d8ff7b8857e42aed6.png",
@@ -64,12 +65,12 @@
     "static/media/tailwindcss.svg": "/static/media/tailwindcss.50fbcf516b9a3774e9a83272167059ae.svg",
     "index.html": "/index.html",
     "static/media/typescript.svg": "/static/media/typescript.22b4f22ec3ee32c08fb2c0a25682bb5b.svg",
-    "main.c2f1b871.css.map": "/static/css/main.c2f1b871.css.map",
-    "main.81e81a37.js.map": "/static/js/main.81e81a37.js.map",
+    "main.924f91f6.css.map": "/static/css/main.924f91f6.css.map",
+    "main.2564beed.js.map": "/static/js/main.2564beed.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2f1b871.css",
-    "static/js/main.81e81a37.js"
+    "static/css/main.924f91f6.css",
+    "static/js/main.2564beed.js"
   ]
 }
