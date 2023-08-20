@@ -7,7 +7,8 @@ export type projectType = {
   name: string;
   description: string;
   image: any[];
-  githubLink: string;
+  figmaLink?: string;
+  githubLink?: string;
   link?: string;
   tech: techType[];
 };
