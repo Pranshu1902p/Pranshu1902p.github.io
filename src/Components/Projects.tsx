@@ -6,6 +6,7 @@ import codeLogo from "../code.png";
 import { linkType, projectType } from "../Types/DataType";
 
 // import figma images
+import booksworld from "../Images/figma/booksworld.png";
 import privagram from "../Images/figma/privagram.png";
 
 // Import project images
@@ -40,6 +41,15 @@ import Carousal from "./Common/Carousal";
 
 export default function Projects() {
   const figmaProjects: projectType[] = [
+    {
+      name: "Book's World",
+      description:
+        "One place to manage all the books you ever read. This is the mobile UI/UX design for my web dev project: Book's World.",
+      figmaLink:
+        "https://www.figma.com/file/4HcTbjhdY9yGU5xvo3t2CE/Books-World?type=design&node-id=0%3A1&mode=design&t=oPxmyLxL2RqVDtBg-1",
+      image: [booksworld],
+      tech: [{ name: "Figma" }],
+    },
     {
       name: "Privagram",
       description:
