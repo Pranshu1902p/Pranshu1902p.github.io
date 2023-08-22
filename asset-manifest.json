@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.924f91f6.css",
-    "main.js": "/static/js/main.fb3aa11f.js",
+    "main.js": "/static/js/main.4abc5d49.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/coding.gif": "/static/media/coding.54de1c2854e13f48aaaa.gif",
     "static/media/profile.jpg": "/static/media/profile.91a4a0ee8e2b5eda43ba.jpg",
+    "static/media/booksworld.png": "/static/media/booksworld.852552992977ea19bcd3.png",
     "static/media/unilink1.png": "/static/media/unilink1.cf23fddf7039f7c0cfa5.png",
     "static/media/gladdenproject.png": "/static/media/gladdenproject.8af36fc505296020d9e8.png",
     "static/media/breakout.png": "/static/media/breakout.802319283b72155c2fae.png",
@@ -66,11 +67,11 @@
     "index.html": "/index.html",
     "static/media/typescript.svg": "/static/media/typescript.22b4f22ec3ee32c08fb2c0a25682bb5b.svg",
     "main.924f91f6.css.map": "/static/css/main.924f91f6.css.map",
-    "main.fb3aa11f.js.map": "/static/js/main.fb3aa11f.js.map",
+    "main.4abc5d49.js.map": "/static/js/main.4abc5d49.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.924f91f6.css",
-    "static/js/main.fb3aa11f.js"
+    "static/js/main.4abc5d49.js"
   ]
 }
