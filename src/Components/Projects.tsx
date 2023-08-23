@@ -1,9 +1,7 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Switch from "react-switch";
-import Footer from "./Common/Footer";
-import Header from "./Common/Header";
 import codeLogo from "../code.png";
-import { linkType, projectType } from "../Types/DataType";
+import { projectType } from "../Types/DataType";
 
 // import figma images
 import booksworld from "../Images/figma/booksworld.png";
@@ -229,17 +227,12 @@ export default function Projects() {
 
   const [showGithubProject, setShowGithubProject] = useState(true);
 
-  const filters: linkType[] = [
-    { title: "Home", active: false, link: "/" },
-    { title: "Blogs", active: false, link: "/blogs" },
-    { title: "Projects", active: true, link: "/projects" },
-    { title: "Experience", active: false, link: "/experience" },
-  ];
+  const [limit, setLimit] = useState(3);
 
   const displayProject: any = (projects: projectType[]) => {
     return (
-      <div className="flex flex-col gap-36">
-        {projects.map((project: projectType, index) => {
+      <div className="flex flex-col gap-8">
+        {projects.slice(0, limit).map((project: projectType, index) => {
           const styleClass: string =
             index % 2 === 0
               ? "flex flex-col lg:flex-row"
@@ -256,10 +249,10 @@ export default function Projects() {
               </div>
               {/* Text */}
               <div className="flex flex-col justify-center h-full w-full lg:w-1/2">
-                <p className="text-4xl text-[#66fcf1] font-bold pb-4">
+                <p className="text-2xl md:text-4xl text-[#66fcf1] font-bold pb-4">
                   {project.name}
                 </p>
-                <p className="text-xl pb-4 bg-[#112240] rounded-lg p-4 shadow-lg">
+                <p className="text-lg pb-4 bg-[#112240] rounded-lg p-4 shadow-lg">
                   {project.description}
                 </p>
                 <p className="flex flex-wrap gap-4 pb-4 text-xl">
@@ -307,43 +300,24 @@ export default function Projects() {
     );
   };
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-
-    document.title = "Projects | Pranshu Aggarwal";
-  }, []);
-
   return (
-    <div className="absolute bg-gradient-to-br from-[#0a192f] via-[#0a192f] to-[#112240] text-[#c5c6c7] w-full min-h-screen">
-      <Header filters={filters} />
-      <div className="w-full p-4 fadeIn mt-20 md:mt-12 pb-36 md:p-24 flex flex-col gap-4">
-        <div className="flex md:flex-row flex-col justify-between md:gap-2 pb-4">
+    <div id="Projects">
+      <div className="w-full pt-6 p-4 md:p-24 flex flex-col gap-4">
+        <div className="flex md:flex-row flex-col justify-between md:gap-2">
           <div className="flex flex-col gap-4 w-full">
             <div className="flex flex-row pt-6 justify-start items-center">
               <img
                 src={codeLogo}
                 alt="code logo"
-                className="bg-transparent w-1/6 flex"
+                className="bg-transparent w-1/12 flex"
               />
-              <h1 className="text-[#66fcf1] font-bold flex text-5xl md:text-7xl">
+              <h1 className="text-[#66fcf1] font-bold flex text-3xl md:text-5xl">
                 Projects
               </h1>
             </div>
-            <div
-              className="text-3xl flex justify-start pl-12"
-              style={{ paddingBottom: "15%" }}
-            >
-              Some things I've built
-            </div>
           </div>
-          <div className="flex items-center justify-center gap-4">
-            {/* <button
-              className="text-[#66fcf1]"
-              onClick={() => setShowGithubProject(!showGithubProject)}
-            >
-              Toggle
-            </button> */}
-            <i className="text-2xl md:text-5xl fa-brands fa-figma"></i>
+          <div className="flex items-center justify-center gap-4 pt-4">
+            <i className="text-2xl md:text-3xl fa-brands fa-figma"></i>
             <Switch
               onColor="#01d293"
               offColor="#13BDFE"
@@ -352,19 +326,32 @@ export default function Projects() {
               checkedIcon={<></>}
               checked={showGithubProject}
               onChange={() => {
+                setLimit(3);
                 setShowGithubProject(!showGithubProject);
               }}
             />
-            <i className="text-2xl md:text-5xl fa fa-github"></i>
+            <i className="text-2xl md:text-3xl fa fa-github"></i>
           </div>
         </div>
+        <hr />
+
         {/* Projects List */}
         {showGithubProject
           ? displayProject(githubProjects)
           : displayProject(figmaProjects)}
-      </div>
-      <div className="w-full">
-        <Footer />
+
+        {/* Load More */}
+        {((showGithubProject && limit < githubProjects.length) ||
+          (!showGithubProject && limit < figmaProjects.length)) && (
+          <div className="flex justify-center items-center mt-6">
+            <button
+              className="px-8 hover:bg-[#112240] transition duration-300 border-2 border-[#01d293] text-[#01d293] p-2 rounded-lg"
+              onClick={() => setLimit(limit + 3)}
+            >
+              Load More
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

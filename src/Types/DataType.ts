@@ -22,9 +22,3 @@ export type experienceType = {
   startDate?: string;
   endDate?: string;
 };
-
-export type linkType = {
-  title: string;
-  active: boolean;
-  link: string;
-};

@@ -1,7 +1,5 @@
 import { useEffect } from "react";
 import profile from "../Images/profile.jpg";
-import Footer from "./Common/Footer";
-import Header from "./Common/Header";
 import computerLogo from "../coding.gif";
 import mongo from "../Images/tech/mongodb.png";
 import Nextjs from "../Images/tech/nextjs.png";
@@ -24,9 +22,7 @@ import langchain from "../Images/tech/langchain.png";
 import azure from "../Images/tech/azure.png";
 import flutter from "../Images/tech/flutter.png";
 import dart from "../Images/tech/dart.png";
-import { linkType } from "../Types/DataType";
 import { TypeAnimation } from "react-type-animation";
-import { Link } from "raviger";
 
 export default function Home() {
   const technologies = [
@@ -52,14 +48,6 @@ export default function Home() {
     { name: "Figma", img: figma },
     { name: "Blender", img: blender },
   ];
-
-  const filters: linkType[] = [
-    { title: "Home", active: true, link: "/" },
-    { title: "Blogs", active: false, link: "/blogs" },
-    { title: "Projects", active: false, link: "/projects" },
-    { title: "Experience", active: false, link: "/experience" },
-  ];
-
   useEffect(() => {
     window.scrollTo(0, 0);
 
@@ -67,14 +55,12 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="absolute bg-gradient-to-br from-[#0a192f] via-[#0a192f] to-[#112240] text-[#c5c6c7] w-full min-h-screen">
-      {/* Header */}
-      <Header filters={filters} />
-      <div className="pt-6 mt-24 pb-24 p-4 fadeIn md:p-24 flex flex-col gap-4 justify-center items-center w-full">
+    <div>
+      <div className="pt-6 mt-24 p-4 fadeIn md:p-24 flex flex-col gap-4 justify-center items-center w-full">
         {/* Intro */}
-        <div className="flex flex-col-reverse md:flex-row gap-4 pb-48 justify-center items-center">
+        <div className="flex flex-col-reverse md:flex-row gap-4 pb-24 justify-center items-center">
           <div className="flex flex-col gap-4 justify-start items-start">
-            <p className="text-[#01d293] flex justify-start items-start">
+            <p className="text-[#01d293] text-xl flex justify-start items-start">
               Hi, I am
             </p>
             <h1 className="text-[#66fcf1] font-bold text-5xl md:text-7xl">
@@ -103,7 +89,7 @@ export default function Home() {
               <p className="text-[#01d293] pt-2 text-2xl">Sic Parvis Magna</p>
             </p>
             <a
-              href="mailto:pranshu1902@gmail.com"
+              href="#Contact"
               className="md:w-1/6 mt-6 flex justify-center items-center font-bold transition duration-500 bg-[#66fcf1] hover:bg-[#45a29e] text-black rounded-lg p-2"
             >
               Get in Touch
@@ -119,7 +105,7 @@ export default function Home() {
         </div>
 
         {/* About me */}
-        <div className="h-full pb-24">
+        <div className="h-full">
           <div className="flex flex-col-reverse md:flex-row-reverse justify-center items-center gap-4 w-full h-full">
             <div className="flex flex-col gap-4 md:w-1/2 justify-center text-xl">
               <h1 className="text-3xl font-bold text-[#ccd6f6]">About Me</h1>
@@ -142,12 +128,12 @@ export default function Home() {
               <div>
                 <p>
                   I also write&nbsp;
-                  <Link
-                    href="/blogs"
+                  <a
+                    href="#Blogs"
                     className="text-[#64ffda] txt hover:underline transition duration-1000"
                   >
                     blogs
-                  </Link>
+                  </a>
                   .
                 </p>
               </div>
@@ -164,7 +150,7 @@ export default function Home() {
         </div>
 
         {/* Technologies */}
-        <div className="flex flex-col gap-2 justify-center items-center pt-36">
+        <div className="flex flex-col gap-2 justify-center items-center pt-12">
           <p className="text-3xl text-[#ccd6f6] font-bold">
             Technologies I have worked with:
           </p>
@@ -182,11 +168,6 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </div>
-
-      {/* Footer */}
-      <div className="w-full">
-        <Footer />
       </div>
     </div>
   );

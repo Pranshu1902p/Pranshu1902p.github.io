@@ -1,8 +1,11 @@
-import { useEffect } from "react";
-import Footer from "./Common/Footer";
-import Header from "./Common/Header";
+import { useState } from "react";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 import experienceLogo from "../experience.png";
-import { experienceType, linkType } from "../Types/DataType";
+import { experienceType } from "../Types/DataType";
 import gssoc from "../Images/experience/gssoc.png";
 import microsoft from "../Images/experience/microsoft.png";
 import egov from "../Images/experience/egov.png";
@@ -30,8 +33,7 @@ export default function Experience() {
     {
       name: "Android Club",
       image: Android,
-      description:
-        "Leaded a team of developers to build great products.",
+      description: "Leaded a team of developers to build great products.",
       position: "Technical Lead",
       tech: ["Leadership", "Team Management", "React Native"],
       startDate: "May 2023",
@@ -148,116 +150,80 @@ export default function Experience() {
     },
   ];
 
-  const filters: linkType[] = [
-    { title: "Home", active: false, link: "/" },
-    { title: "Blogs", active: false, link: "/blogs" },
-    { title: "Projects", active: false, link: "/projects" },
-    { title: "Experience", active: true, link: "/experience" },
-  ];
+  const [limit, setLimit] = useState(5);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-
-    document.title = "Experience | Pranshu Aggarwal";
-  }, []);
+  const displayExperience = () => {
+    return (
+      <VerticalTimeline lineColor="#c5c6c7">
+        {experiences.slice(0, limit).map((experience) => (
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{
+              background: "#112240",
+            }}
+            contentArrowStyle={{
+              borderRight: "7px solid  #66fcf1",
+            }}
+            date={experience.startDate + " - " + experience.endDate}
+            iconStyle={{ background: "#112240", color: "#c5c6c7" }}
+            icon={
+              <div className="flex justify-center items-center w-full h-full">
+                <img
+                  className="rounded-full"
+                  src={experience.image}
+                  alt="test"
+                />
+              </div>
+            }
+          >
+            <h3 className="text-2xl vertical-timeline-element-title text-[#01d293]">
+              {experience.position}
+            </h3>
+            <h4 className="text-xl vertical-timeline-element-subtitle text-[#66FCF1]">
+              {experience.name}
+            </h4>
+            <div className="flex flex-wrap gap-2 font-bold">
+              <p>{experience.description}</p>
+              {experience.tech.map((tech) => (
+                <p>{tech}</p>
+              ))}
+            </div>
+          </VerticalTimelineElement>
+        ))}
+      </VerticalTimeline>
+    );
+  };
 
   return (
-    <div className="absolute bg-gradient-to-br from-[#0a192f] via-[#0a192f] to-[#112240] text-[#c5c6c7] w-full min-h-screen">
-      {/* Header */}
-      <Header filters={filters} />
-      <div className="p-4 md:p-24 fadeIn mt-20 md:mt-12 flex flex-col gap-4 justify-start">
+    <div id="Experience">
+      <div className="pt-6 p-4 md:p-24 flex flex-col justify-start">
         {/* Intro */}
-        <div className="flex flex-row gap-2 md:pb-12 w-full items-center">
-          <div className="flex justify-center items-center w-1/3 md:w-1/5">
+        <div className="flex flex-row gap-2 w-full items-center">
+          <div className="flex justify-center items-center w-1/6 md:w-1/12">
             <img className="bg-transparent" src={experienceLogo} alt="" />
           </div>
           <div className="flex flex-col gap-4 justify-center items-center">
-            <h1 className="text-[#66fcf1] font-bold text-5xl md:text-7xl">
+            <h1 className="text-[#66fcf1] font-bold text-3xl md:text-5xl">
               Experience
             </h1>
           </div>
         </div>
-
+        <hr />
         {/* Experiene */}
-        <div className="h-full w-full flex justify-center items-center pb-36">
+        <div className="h-full w-full flex justify-center items-center pb-36 mt-6">
           <div className="flex flex-col gap-12 w-screen">
-            {experiences.map((experience: experienceType, index) => {
-              if (index % 2 === 0) {
-                return (
-                  <div className="left-0 flex flex-row gap-4 justify-start items-center">
-                    <div className="flex flex-col md:flex-row md:w-2/5 gap-4 bg-[#112240] rounded-lg p-3 shadow-lg">
-                      <div className="flex justify-center items-center w-1/4">
-                        <img
-                          src={experience.image}
-                          alt={experience.name + " logo"}
-                          className="rounded-full w-5/6"
-                        />
-                      </div>
-                      <div className="flex flex-col md:w-3/4">
-                        <p className="text-2xl font-bold text-[#66fcf1]">
-                          {experience.name}
-                        </p>
-                        <p className="text-xl pt-2 text-[#01d293]">
-                          {experience.position}
-                        </p>
-                        <p>{experience.description}</p>
-                        <p className="flex flex-row flex-wrap gap-2 font-bold">
-                          {experience.tech.map((tech: string) => {
-                            return <p className="truncate">{tech}</p>;
-                          })}
-                        </p>
-                        <p className="pt-4">
-                          {experience.startDate} - {experience.endDate}
-                        </p>
-                      </div>
-                    </div>
-                    <div>
-                      <p className="p-2 bg-[#66fcf1] rounded-full"></p>
-                    </div>
-                  </div>
-                );
-              } else {
-                return (
-                  <div className="right-0 flex flex-row gap-4 justify-end items-center">
-                    <div>
-                      <p className="p-2 bg-[#66fcf1] rounded-full"></p>
-                    </div>
-                    <div className="flex flex-col md:flex-row md:w-2/5 gap-4 bg-[#112240] rounded-lg p-3 shadow-lg">
-                      <div className="flex justify-center items-center w-1/4">
-                        <img
-                          src={experience.image}
-                          alt={experience.name + " logo"}
-                          className="rounded-full w-5/6"
-                        />
-                      </div>
-                      <div className="flex flex-col md:w-3/4">
-                        <p className="text-2xl font-bold text-[#66fcf1]">
-                          {experience.name}
-                        </p>
-                        <p className="text-xl pt-2 text-[#01d293]">
-                          {experience.position}
-                        </p>
-                        <p>{experience.description}</p>
-                        <p className="flex flex-row flex-wrap gap-2 font-bold">
-                          {experience.tech.map((tech: string) => {
-                            return <p className="truncate">{tech}</p>;
-                          })}
-                        </p>
-                        <p className="pt-4">
-                          {experience.startDate} - {experience.endDate}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                );
-              }
-            })}
+            {displayExperience()}
+            {limit < experiences.length && (
+              <div className="flex justify-center items-center">
+                <button
+                  className="px-8 hover:bg-[#112240] transition duration-300 border-2 border-[#01d293] text-[#01d293] p-2 rounded-lg"
+                  onClick={() => setLimit(limit + 5)}
+                >
+                  Load more
+                </button>
+              </div>
+            )}
           </div>
-        </div>
-
-        {/* Footer */}
-        <div className="w-full absolute inset-x-0 bottom-0">
-          <Footer />
         </div>
       </div>
     </div>

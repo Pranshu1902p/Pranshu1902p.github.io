@@ -1,22 +1,13 @@
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
-import { linkType } from "../../Types/DataType";
-import { Link } from "raviger";
 
-function classNames(...classes: any[]) {
-  return classes.filter(Boolean).join(" ");
-}
-
-export default function DropDown(props: { filters: linkType[] }) {
-  const [filter, setFilter] = useState(props.filters);
+export default function DropDown() {
+  const headers: String[] = ["Home", "Blogs", "Projects", "Experience"];
 
   const onButtonClick = () => {
-    // using Java Script method to get PDF file
     fetch("Resume.pdf").then((response) => {
       response.blob().then((blob) => {
-        // Creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
-        // Setting various property values
         let alink = document.createElement("a");
         alink.href = fileURL;
         alink.download = "Resume.pdf";
@@ -27,10 +18,9 @@ export default function DropDown(props: { filters: linkType[] }) {
 
   return (
     <Menu as="div" className="relative w-3/4 inline-block text-left">
-      <div>
+      <div className="flex items-center h-full">
         <Menu.Button className="inline-flex justify-center w-full rounded-md border border-[#112240] shadow-lg px-6 py-2 bg-[#112240] text-sm font-bold text-[#66fcf1] hover:bg-[#112240] focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-[#66fcf1]">
-          {filter.filter((field: linkType) => field.active)[0].title}&nbsp;
-          <i className="fa fa-sort-down"></i>
+          <i className="fa-solid fa-bars"></i>
         </Menu.Button>
       </div>
 
@@ -45,38 +35,14 @@ export default function DropDown(props: { filters: linkType[] }) {
       >
         <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-[#112240] ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className="py-1">
-            {filter.map((filterElement: linkType, index) => (
+            {headers.map((filterElement: String, index) => (
               <Menu.Item key={index}>
-                <Link
-                  href={filterElement.link}
-                  className={classNames(
-                    filterElement.active
-                      ? "bg-[#112240] hover:bg-[#163874] text-[#66fcf1] w-full flex justify-start font-bold"
-                      : "bg-[#112240] hover:bg-[#163874] w-full flex justify-start hover:font-bold",
-                    "block px-4 py-2 text-sm"
-                  )}
-                  onClick={() => {
-                    let newFilter: linkType[] = [];
-                    filter.forEach((element: linkType) => {
-                      if (element.title === filterElement.title) {
-                        newFilter.push({
-                          title: element.title,
-                          active: true,
-                          link: element.link,
-                        });
-                      } else {
-                        newFilter.push({
-                          title: element.title,
-                          active: false,
-                          link: element.link,
-                        });
-                      }
-                    });
-                    setFilter(newFilter);
-                  }}
+                <a
+                  href={`#${filterElement}`}
+                  className="bg-[#112240] hover:bg-[#163874] w-full flex justify-start hover:font-bold px-4 py-2 text-sm"
                 >
-                  {filterElement.title}
-                </Link>
+                  {filterElement}
+                </a>
               </Menu.Item>
             ))}
             <Menu.Item key={5}>

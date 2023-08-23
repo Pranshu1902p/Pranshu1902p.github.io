@@ -1,42 +1,21 @@
-import { useEffect } from "react";
-import { linkType } from "../Types/DataType";
-import Footer from "./Common/Footer";
-import Header from "./Common/Header";
 import data from "./blog.json";
 import logo from "../blog.png";
 
 export default function Blogs() {
-  const filters: linkType[] = [
-    { title: "Home", active: false, link: "/" },
-    { title: "Blogs", active: true, link: "/blogs" },
-    { title: "Projects", active: false, link: "/projects" },
-    { title: "Experience", active: false, link: "/experience" },
-  ];
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-
-    document.title = "Blogs | Pranshu Aggarwal";
-  });
-
   return (
-    <div className="absolute bg-gradient-to-br from-[#0a192f] via-[#0a192f] to-[#112240] text-[#c5c6c7] w-full min-h-screen">
-      {/* Header */}
-      <Header filters={filters} />
-      <div className="pt-6 mt-20 md:mt-12 pb-24 fadeIn p-4 md:p-24 flex flex-col gap-4 w-full">
-        <div style={{ paddingBottom: "3%" }} className="flex flex-row pt-6">
+    <div id="Blogs">
+      <div className="pt-6 p-4 md:p-24 flex flex-col gap-4 w-full">
+        <div className="flex flex-row pt-6">
           <img
             src={logo}
             alt="blog logo"
-            className="bg-transparent w-1/6 flex"
+            className="bg-transparent w-1/12 flex"
           />
-          <h1 className="text-[#66fcf1] font-bold flex text-5xl md:text-7xl items-center">
+          <h1 className="text-[#66fcf1] font-bold flex text-3xl md:text-5xl items-center">
             Blogs
           </h1>
         </div>
-        <div className="text-3xl" style={{ paddingBottom: "15%" }}>
-          Some of my latest blogs
-        </div>
+        <hr />
         <div className="flex flex-col gap-12">
           {data.map((blog) => (
             <div className="bg-[#112240] rounded-lg p-3 shadow-lg hover:shadow-2xl transition duration-300">
@@ -73,9 +52,6 @@ export default function Blogs() {
             </button>
           </a>
         </div>
-      </div>
-      <div className="w-full">
-        <Footer />
       </div>
     </div>
   );
