@@ -19,7 +19,7 @@ export default function Header() {
   return (
     <div className="pl-6 pr-6 p-3 md:p-6 flex justify-between bg-[#0a192f] shadow-xl shadow-[#112240] border-b-2 border-[#01d293] fixed w-full z-10 mb-12">
       <div>
-        <img className="w-10 md:w-16 absolute z-0" src={logo} alt="" />
+        <img className="w-10 md:w-16 absolute" src={logo} alt="" />
       </div>
       {/* Desktop View */}
       <div className="hidden md:block">
