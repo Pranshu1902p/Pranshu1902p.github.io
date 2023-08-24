@@ -4,7 +4,7 @@ import logo from "../blog.png";
 export default function Blogs() {
   return (
     <div id="Blogs">
-      <div className="pt-6 p-4 md:p-24 flex flex-col gap-4 w-full">
+      <div className="pt-12 p-4 md:p-24 flex flex-col gap-4 w-full">
         <div className="flex flex-row pt-6">
           <img
             src={logo}

@@ -302,7 +302,7 @@ export default function Projects() {
 
   return (
     <div id="Projects">
-      <div className="w-full pt-6 p-4 md:p-24 flex flex-col gap-4">
+      <div className="w-full pt-12 p-4 md:p-24 flex flex-col gap-4">
         <div className="flex md:flex-row flex-col justify-between md:gap-2">
           <div className="flex flex-col gap-4 w-full">
             <div className="flex flex-row pt-6 justify-start items-center">

@@ -28,7 +28,7 @@ export default function Experience() {
       position: "Mentor",
       tech: ["Leadership", "Team Management", "Open Source"],
       startDate: "May 2023",
-      endDate: "Present",
+      endDate: "Aug 2023",
     },
     {
       name: "Android Club",
@@ -196,7 +196,7 @@ export default function Experience() {
 
   return (
     <div id="Experience">
-      <div className="pt-6 p-4 md:p-24 flex flex-col justify-start">
+      <div className="pt-12 p-4 md:p-24 flex flex-col justify-start">
         {/* Intro */}
         <div className="flex flex-row gap-2 w-full items-center">
           <div className="flex justify-center items-center w-1/6 md:w-1/12">
