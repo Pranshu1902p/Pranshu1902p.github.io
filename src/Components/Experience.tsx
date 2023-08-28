@@ -77,7 +77,7 @@ export default function Experience() {
       position: "Teaching Assistant",
       tech: ["Web development", "Teaching", "Leadership"],
       startDate: "Sept 2022",
-      endDate: "Present",
+      endDate: "Aug 2023",
     },
     {
       name: "Microsoft Innovations Club",
