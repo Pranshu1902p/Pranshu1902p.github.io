@@ -5,6 +5,7 @@ import mongo from "../Images/tech/mongodb.png";
 import Nextjs from "../Images/tech/nextjs.png";
 import React from "../Images/tech/React.png";
 import Django from "../Images/tech/django.png";
+import Flask from "../Images/tech/flask.png";
 import Nodejs from "../Images/tech/nodejs.png";
 import Typescript from "../Images/tech/typescript.svg";
 import Tailwind from "../Images/tech/tailwindcss.svg";
@@ -35,6 +36,7 @@ export default function Home() {
     { name: "Tailwind", img: Tailwind },
     { name: "TypeScript", img: Typescript },
     { name: "JavaScript", img: JavaScript },
+    { name: "Flask", img: Flask },
     { name: "Python", img: Python },
     { name: "TensorFlow", img: tensorflow },
     { name: "LangChain", img: langchain },
