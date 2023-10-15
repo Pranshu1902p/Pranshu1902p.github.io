@@ -8,6 +8,12 @@ import booksworld from "../Images/figma/booksworld.png";
 import privagram from "../Images/figma/privagram.png";
 
 // Import project images
+import gem1 from "../Images/projects/gem1.png";
+import gem2 from "../Images/projects/gem2.png";
+import gem3 from "../Images/projects/gem3.png";
+import ayushma1 from "../Images/projects/ayushma1.png";
+import ayushma2 from "../Images/projects/ayushma2.png";
+import ayushma3 from "../Images/projects/ayushma3.png";
 import web_verse from "../Images/projects/web-verse.png";
 import voting1 from "../Images/projects/voting1.png";
 import voting2 from "../Images/projects/voting2.png";
@@ -60,6 +66,27 @@ export default function Projects() {
   ];
 
   const githubProjects: projectType[] = [
+    {
+      name: "GeM WatchDogs",
+      description:
+        "A groundbreaking solution aimed at revolutionizing the online shopping experience on the Government e-Marketplace (GeM) platform. A group project built with @Shubhamm69, @Kushagra102, @Geoffrey-Anto, @Chiranjeev13, and @Ekta-1-9 under SIH'23.",
+      githubLink: "https://github.com/Geoffrey-Anto/sih-2023",
+      image: [gem1, gem2, gem3],
+      tech: [
+        { name: "Chrome Extension" },
+        { name: "Puppeteer" },
+        { name: "React.Js" },
+      ],
+    },
+    {
+      name: "Ayushma",
+      description:
+        "Ayushma is a digital AI health and nursing assistant to help Nurses and Doctors in the most remote parts of the world. It is a part of the Open Health Care Network",
+      githubLink: "https://github.com/coronasafe/ayushma/",
+      link: "https://ayushma.ohc.network/",
+      image: [ayushma1, ayushma2, ayushma3],
+      tech: [{ name: "Django" }, { name: "Next.Js" }, { name: "TypeScript" }],
+    },
     {
       name: "Web-Verse",
       description:
