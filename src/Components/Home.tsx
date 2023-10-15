@@ -23,6 +23,7 @@ import langchain from "../Images/tech/langchain.png";
 import azure from "../Images/tech/azure.png";
 import flutter from "../Images/tech/flutter.png";
 import dart from "../Images/tech/dart.png";
+import storybook from "../Images/tech/storybook.png";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
@@ -46,6 +47,7 @@ export default function Home() {
     { name: "Android Studio", img: androidStudio },
     { name: "Flutter", img: flutter },
     { name: "Dart", img: dart },
+    { name: "StoryBook", img: storybook },
     { name: "ThreeJs", img: threejs },
     { name: "Figma", img: figma },
     { name: "Blender", img: blender },

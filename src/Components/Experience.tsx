@@ -6,6 +6,8 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import experienceLogo from "../experience.png";
 import { experienceType } from "../Types/DataType";
+import samsung from "../Images/experience/samsung.jpg";
+import vit from "../Images/experience/vit.png";
 import gssoc from "../Images/experience/gssoc.png";
 import microsoft from "../Images/experience/microsoft.png";
 import egov from "../Images/experience/egov.png";
@@ -20,6 +22,26 @@ import Biosphere from "../Images/experience/biosphere.png";
 
 export default function Experience() {
   const experiences: experienceType[] = [
+    {
+      name: "Samsung",
+      image: samsung,
+      description:
+        "Part of the Samsung PRISM research program to work with professionals from Samsung",
+      position: "PRISM Developer",
+      tech: ["Research"],
+      startDate: "Sept 2023",
+      endDate: "Present",
+    },
+    {
+      name: "VIT Chennai",
+      image: vit,
+      description:
+        "Developed the application for the IPROPEL (Intelligent Programming Portal for Enhanced Learning) using Next.js and Django REST Framework under Professor Janaki Meena",
+      position: "Project Intern",
+      tech: ["NextJs", "Django"],
+      startDate: "Aug 2023",
+      endDate: "Present",
+    },
     {
       name: "GirlScript Summer of Code",
       image: gssoc,
