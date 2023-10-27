@@ -19,7 +19,7 @@ export default function DropDown() {
   return (
     <Menu as="div" className="relative w-3/4 inline-block text-left">
       <div className="flex items-center h-full">
-        <Menu.Button className="inline-flex justify-center w-full rounded-md border border-[#112240] shadow-lg px-6 py-2 bg-[#112240] text-sm font-bold text-[#66fcf1] hover:bg-[#112240] focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-[#66fcf1]">
+        <Menu.Button className="inline-flex justify-center w-full rounded-md border border-[#112240] shadow-lg px-6 py-2 bg-[#112240] text-sm font-bold text-[#66fcf1] hover:bg-[#112240] focus:outline-none focus:border-2 focus:border-[#66fcf1]">
           <i className="fa-solid fa-bars"></i>
         </Menu.Button>
       </div>

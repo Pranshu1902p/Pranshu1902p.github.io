@@ -6,6 +6,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import experienceLogo from "../experience.png";
 import { experienceType } from "../Types/DataType";
+import attack_capital from "../Images/experience/attack_capital.jpeg";
 import samsung from "../Images/experience/samsung.jpg";
 import vit from "../Images/experience/vit.png";
 import gssoc from "../Images/experience/gssoc.png";
@@ -22,6 +23,16 @@ import Biosphere from "../Images/experience/biosphere.png";
 
 export default function Experience() {
   const experiences: experienceType[] = [
+    {
+      name: "Attack Capital",
+      image: attack_capital,
+      description:
+        "Part of a NY based startup building LLM agents to take calls of customers and answer in real-time",
+      position: "Software Intern",
+      tech: ["LLM", "Transcriber", "NextJs"],
+      startDate: "Oct 2023",
+      endDate: "Present",
+    },
     {
       name: "Samsung",
       image: samsung,
