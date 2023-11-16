@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import profile from "../Images/profile.jpg";
 import computerLogo from "../coding.gif";
 import mongo from "../Images/tech/mongodb.png";
+import redux from "../Images/tech/redux.svg";
 import Nextjs from "../Images/tech/nextjs.png";
 import React from "../Images/tech/React.png";
 import Django from "../Images/tech/django.png";
@@ -34,6 +35,7 @@ export default function Home() {
     { name: "React / React Native", img: React },
     { name: "NodeJs", img: Nodejs },
     { name: "Next.Js", img: Nextjs },
+    { name: "Redux", img: redux },
     { name: "Tailwind", img: Tailwind },
     { name: "TypeScript", img: Typescript },
     { name: "JavaScript", img: JavaScript },
