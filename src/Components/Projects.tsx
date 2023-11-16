@@ -14,6 +14,8 @@ import gem3 from "../Images/projects/gem3.png";
 import ayushma1 from "../Images/projects/ayushma1.png";
 import ayushma2 from "../Images/projects/ayushma2.png";
 import ayushma3 from "../Images/projects/ayushma3.png";
+import vibrance1 from "../Images/projects/vibrance1.png";
+import vibrance2 from "../Images/projects/vibrance2.png";
 import web_verse from "../Images/projects/web-verse.png";
 import voting1 from "../Images/projects/voting1.png";
 import voting2 from "../Images/projects/voting2.png";
@@ -95,6 +97,14 @@ export default function Projects() {
         "https://github.com/Android-Club-VITC/webverse/tree/main/server",
       image: [web_verse],
       tech: [{ name: "ExpressJs" }, { name: "NodeJs" }, { name: "Prisma" }],
+    },
+    {
+      name: "Vibrance App",
+      description:
+        "A mobile app for the cultural fest: Vibrance 2023 at VIT Chennai. Developed under Android Club VITC. Lists the events during the fest along with merchandise.",
+      githubLink: "https://github.com/Android-Club-VITC/Vibrance-2023",
+      image: [vibrance1, vibrance2],
+      tech: [{ name: "React Native" }],
     },
     {
       name: "Online Voting",
