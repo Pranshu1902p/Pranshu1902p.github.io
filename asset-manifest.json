@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2ada0bd0.css",
-    "main.js": "/static/js/main.b72963ce.js",
+    "main.js": "/static/js/main.5fd095dc.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/coding.gif": "/static/media/coding.54de1c2854e13f48aaaa.gif",
     "static/media/profile.jpg": "/static/media/profile.91a4a0ee8e2b5eda43ba.jpg",
@@ -12,6 +12,7 @@
     "static/media/breakout.png": "/static/media/breakout.802319283b72155c2fae.png",
     "static/media/p_chat.png": "/static/media/p_chat.7cff8a277d867f3d4aaa.png",
     "static/media/martial arts.png": "/static/media/martial arts.669a11835f8652688af7.png",
+    "static/media/vibrance1.png": "/static/media/vibrance1.8fea78c592dd65778273.png",
     "static/media/voting2.png": "/static/media/voting2.138d45b5168e06bfcd92.png",
     "static/media/voting3.png": "/static/media/voting3.03ffbd3e0255c4ecad2e.png",
     "static/media/voting5.png": "/static/media/voting5.10ad321b1f275818e516.png",
@@ -22,6 +23,7 @@
     "static/media/books_world3.png": "/static/media/books_world3.97d41fd62f131f167e62.png",
     "static/media/bizzcard2.png": "/static/media/bizzcard2.06fa51d40f01b6c5dcad.png",
     "static/media/thegladdenproject.png": "/static/media/thegladdenproject.fae2acf292fcb895735a.png",
+    "static/media/vibrance2.png": "/static/media/vibrance2.26d35e3aec1583a6cb9e.png",
     "static/media/care.png": "/static/media/care.c5cb9bbc3972c349c5a8.png",
     "static/media/gem2.png": "/static/media/gem2.9942640a7d724923da5d.png",
     "static/media/React.png": "/static/media/React.81ed438b18e24116794d.png",
@@ -45,8 +47,8 @@
     "static/media/langchain.png": "/static/media/langchain.28ab69c6402032bf1ab1.png",
     "static/media/ayushma2.png": "/static/media/ayushma2.5f62ccbab4e3f0262af7.png",
     "static/media/unilink3.png": "/static/media/unilink3.5343e06f7220c9ef9f9e.png",
-    "static/media/biosphere.png": "/static/media/biosphere.ba740e67aa97e6ecaf4b.png",
     "service-worker.js": "/service-worker.js",
+    "static/media/biosphere.png": "/static/media/biosphere.ba740e67aa97e6ecaf4b.png",
     "static/media/django.png": "/static/media/django.c2b351f1472bcf999b3c.png",
     "static/media/flutter.png": "/static/media/flutter.e35b9894ab644396c065.png",
     "static/media/nodejs.png": "/static/media/nodejs.387d195b11b396c87977.png",
@@ -77,11 +79,11 @@
     "index.html": "/index.html",
     "static/media/typescript.svg": "/static/media/typescript.22b4f22ec3ee32c08fb2c0a25682bb5b.svg",
     "main.2ada0bd0.css.map": "/static/css/main.2ada0bd0.css.map",
-    "main.b72963ce.js.map": "/static/js/main.b72963ce.js.map",
+    "main.5fd095dc.js.map": "/static/js/main.5fd095dc.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2ada0bd0.css",
-    "static/js/main.b72963ce.js"
+    "static/js/main.5fd095dc.js"
   ]
 }
