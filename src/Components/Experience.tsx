@@ -27,11 +27,11 @@ export default function Experience() {
       name: "Attack Capital",
       image: attack_capital,
       description:
-        "Part of a NY based startup building LLM agents to take calls of customers and answer in real-time",
+        "Part of a YC funded, NY based startup. Led the frontend side of the OpenMic.Ai project. Also involved in the backend.",
       position: "Software Intern",
-      tech: ["LLM", "Transcriber", "NextJs"],
+      tech: ["NextJs", "Prisma", "LLM"],
       startDate: "Oct 2023",
-      endDate: "Present",
+      endDate: "Dec 2023",
     },
     {
       name: "Samsung",
