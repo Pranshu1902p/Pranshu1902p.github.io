@@ -175,7 +175,7 @@ export default function Experience() {
       name: "GDC Fellowship",
       description:
         "One of the 40 out of 48k applicant students selected for GDC fellowship with AICTE for a training + internship programme.",
-      position: "Full Stack Developer",
+      position: "National Software Fellow",
       image: Gdc,
       tech: ["React", "Django", "Typescript", "Tailwind"],
       startDate: "Jan 2022",
