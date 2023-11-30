@@ -31,7 +31,7 @@ export default function Experience() {
       position: "Software Intern",
       tech: ["NextJs", "Prisma", "LLM"],
       startDate: "Oct 2023",
-      endDate: "Dec 2023",
+      endDate: "Nov 2023",
     },
     {
       name: "Samsung",
