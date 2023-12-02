@@ -8,6 +8,8 @@ import React from "../Images/tech/React.png";
 import Django from "../Images/tech/django.png";
 import Flask from "../Images/tech/flask.png";
 import Nodejs from "../Images/tech/nodejs.png";
+import redis from "../Images/tech/redis.png";
+import postgresql from "../Images/tech/postgresql.png";
 import Typescript from "../Images/tech/typescript.svg";
 import Tailwind from "../Images/tech/tailwindcss.svg";
 import JavaScript from "../Images/tech/js.png";
@@ -41,6 +43,8 @@ export default function Home() {
     { name: "JavaScript", img: JavaScript },
     { name: "Flask", img: Flask },
     { name: "Python", img: Python },
+    { name: "Redis", img: redis },
+    { name: "PostgreSQl", img: postgresql },
     { name: "TensorFlow", img: tensorflow },
     { name: "LangChain", img: langchain },
     { name: "Azure", img: azure },
