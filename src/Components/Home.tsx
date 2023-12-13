@@ -27,6 +27,7 @@ import azure from "../Images/tech/azure.png";
 import flutter from "../Images/tech/flutter.png";
 import dart from "../Images/tech/dart.png";
 import storybook from "../Images/tech/storybook.png";
+import rescript from "../Images/tech/rescript.png";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
@@ -41,6 +42,7 @@ export default function Home() {
     { name: "Tailwind", img: Tailwind },
     { name: "TypeScript", img: Typescript },
     { name: "JavaScript", img: JavaScript },
+    { name: "ReScript", img: rescript },
     { name: "Flask", img: Flask },
     { name: "Python", img: Python },
     { name: "Redis", img: redis },
