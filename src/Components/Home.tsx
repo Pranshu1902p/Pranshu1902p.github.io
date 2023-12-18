@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import profile from "../Images/profile.jpg";
 import computerLogo from "../coding.gif";
 import mongo from "../Images/tech/mongodb.png";
+import pytorch from "../Images/tech/pytorch.png";
 import redux from "../Images/tech/redux.svg";
 import Nextjs from "../Images/tech/nextjs.png";
 import React from "../Images/tech/React.png";
@@ -47,6 +48,7 @@ export default function Home() {
     { name: "Python", img: Python },
     { name: "Redis", img: redis },
     { name: "PostgreSQl", img: postgresql },
+    { name: "PyTorch", img: pytorch },
     { name: "TensorFlow", img: tensorflow },
     { name: "LangChain", img: langchain },
     { name: "Azure", img: azure },
