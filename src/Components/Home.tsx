@@ -29,6 +29,7 @@ import flutter from "../Images/tech/flutter.png";
 import dart from "../Images/tech/dart.png";
 import storybook from "../Images/tech/storybook.png";
 import rescript from "../Images/tech/rescript.png";
+import firebase from "../Images/tech/firebase.png";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
@@ -46,6 +47,7 @@ export default function Home() {
     { name: "ReScript", img: rescript },
     { name: "Flask", img: Flask },
     { name: "Python", img: Python },
+    { name: "Firebase", img: firebase },
     { name: "Redis", img: redis },
     { name: "PostgreSQl", img: postgresql },
     { name: "PyTorch", img: pytorch },
