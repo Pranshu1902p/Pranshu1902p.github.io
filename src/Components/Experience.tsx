@@ -51,7 +51,7 @@ export default function Experience() {
       position: "Project Intern",
       tech: ["NextJs", "Django"],
       startDate: "Aug 2023",
-      endDate: "Present",
+      endDate: "Dec 2023",
     },
     {
       name: "GirlScript Summer of Code",
@@ -66,11 +66,11 @@ export default function Experience() {
     {
       name: "Android Club",
       image: Android,
-      description: "Leaded a team of developers to build great products.",
+      description: "Leaded a team of developers to build great products and conduct large scale events.",
       position: "Technical Lead",
       tech: ["Leadership", "Team Management", "React Native"],
       startDate: "May 2023",
-      endDate: "Present",
+      endDate: "Mar 2024",
     },
     {
       name: "Microsoft",
