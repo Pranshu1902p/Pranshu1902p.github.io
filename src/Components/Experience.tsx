@@ -90,7 +90,7 @@ export default function Experience() {
       position: "SDE Intern",
       tech: ["Django", "React"],
       startDate: "Nov 2022",
-      endDate: "Present",
+      endDate: "Apr 2024",
     },
     {
       name: "Google Developer Student Club",
