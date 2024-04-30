@@ -28,7 +28,7 @@ export default function Experience() {
       image: attack_capital,
       description:
         "Part of a YC funded, NY based startup. Led the frontend side of the OpenMic.Ai project. Also involved in the backend.",
-      position: "Software Intern",
+      position: "Freelancer",
       tech: ["NextJs", "Prisma", "LLM"],
       startDate: "Oct 2023",
       endDate: "Nov 2023",
