@@ -8,6 +8,11 @@ import booksworld from "../Images/figma/booksworld.png";
 import privagram from "../Images/figma/privagram.png";
 
 // Import project images
+import jobpulse1 from "../Images/projects/jobpulse1.png";
+import jobpulse2 from "../Images/projects/jobpulse2.png";
+import jobpulse3 from "../Images/projects/jobpulse3.png";
+import jobpulse4 from "../Images/projects/jobpulse4.png";
+import jobpulse5 from "../Images/projects/jobpulse5.png";
 import gem1 from "../Images/projects/gem1.png";
 import gem2 from "../Images/projects/gem2.png";
 import gem3 from "../Images/projects/gem3.png";
@@ -68,6 +73,19 @@ export default function Projects() {
   ];
 
   const githubProjects: projectType[] = [
+    {
+      name: "JobPulse",
+      description:
+        "JobPulse simplifies your job application process by keeping all your applications organized in one place. Track your progress and manage deadlines, ensuring you never miss an opportunity. With an intuitive interface and easy-to-use features, JobPulse helps you stay on top of your job search with ease.",
+      githubLink: "https://github.com/Pranshu1902/JobPulse-fe",
+      link: "https://jobpulse-fe.vercel.app/",
+      image: [jobpulse1, jobpulse2, jobpulse3, jobpulse4, jobpulse5],
+      tech: [
+        { name: "Next.Js" },
+        { name: "Django" },
+        { name: "PostgreSQL" },
+      ],
+    },
     {
       name: "GeM WatchDogs",
       description:
