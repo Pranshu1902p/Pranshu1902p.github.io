@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import profile from "../Images/profile.jpg";
 import computerLogo from "../coding.gif";
 import mongo from "../Images/tech/mongodb.png";
+import docker from "../Images/tech/docker.png";
 import pytorch from "../Images/tech/pytorch.png";
 import redux from "../Images/tech/redux.svg";
 import Nextjs from "../Images/tech/nextjs.png";
@@ -48,6 +49,7 @@ export default function Home() {
     { name: "Flask", img: Flask },
     { name: "Python", img: Python },
     { name: "Firebase", img: firebase },
+    { name: "Docker", img: docker },
     { name: "Redis", img: redis },
     { name: "PostgreSQl", img: postgresql },
     { name: "PyTorch", img: pytorch },
