@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.dcd52d92.css",
-    "main.js": "/static/js/main.516e880c.js",
+    "main.js": "/static/js/main.fb943ec1.js",
     "static/js/787.7da95b79.chunk.js": "/static/js/787.7da95b79.chunk.js",
     "static/media/coding.gif": "/static/media/coding.54de1c2854e13f48aaaa.gif",
     "static/media/profile.jpg": "/static/media/profile.91a4a0ee8e2b5eda43ba.jpg",
@@ -81,6 +81,7 @@
     "static/media/expressjs.png": "/static/media/expressjs.9bd23c3d367cbbbb1017.png",
     "static/media/figma.png": "/static/media/figma.14e985884fc6b096ba3c.png",
     "static/media/redis.png": "/static/media/redis.52a85440d0cb10638fe8.png",
+    "static/media/docker.png": "/static/media/docker.679c0a7673a27ff85797.png",
     "static/media/maze.png": "/static/media/maze.f4cf1d722359c2921764.png",
     "static/media/nextjs.png": "/static/media/nextjs.e7c27390021ffa2b5760.png",
     "static/media/samsung.jpg": "/static/media/samsung.dc62f898db589426557c.jpg",
@@ -89,11 +90,11 @@
     "index.html": "/index.html",
     "static/media/typescript.svg": "/static/media/typescript.22b4f22ec3ee32c08fb2c0a25682bb5b.svg",
     "main.dcd52d92.css.map": "/static/css/main.dcd52d92.css.map",
-    "main.516e880c.js.map": "/static/js/main.516e880c.js.map",
+    "main.fb943ec1.js.map": "/static/js/main.fb943ec1.js.map",
     "787.7da95b79.chunk.js.map": "/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dcd52d92.css",
-    "static/js/main.516e880c.js"
+    "static/js/main.fb943ec1.js"
   ]
 }
