@@ -6,6 +6,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import experienceLogo from "../experience.png";
 import { experienceType } from "../Types/DataType";
+import zomato from "../Images/experience/zomato.png";
 import attack_capital from "../Images/experience/attack_capital.jpeg";
 import samsung from "../Images/experience/samsung.jpg";
 import vit from "../Images/experience/vit.png";
@@ -23,6 +24,15 @@ import Biosphere from "../Images/experience/biosphere.png";
 
 export default function Experience() {
   const experiences: experienceType[] = [
+    {
+      name: "Zomato",
+      image: zomato,
+      description:
+        "Joined Zomato for SDE role",
+      position: "SDE Intern",
+      startDate: "Jan 2025",
+      endDate: "Present",
+    },
     {
       name: "Attack Capital",
       image: attack_capital,
@@ -217,7 +227,7 @@ export default function Experience() {
             </h4>
             <div className="flex flex-wrap gap-2 font-bold">
               <p>{experience.description}</p>
-              {experience.tech.map((tech) => (
+              {experience.tech?.map((tech) => (
                 <p>{tech}</p>
               ))}
             </div>

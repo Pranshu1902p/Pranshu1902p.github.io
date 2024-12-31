@@ -18,7 +18,7 @@ export type experienceType = {
   description: string;
   position: string;
   image?: any;
-  tech: string[];
+  tech?: string[];
   startDate?: string;
   endDate?: string;
 };
