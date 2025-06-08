@@ -6,6 +6,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import experienceLogo from "../experience.png";
 import { experienceType } from "../Types/DataType";
+import blinkit from "../Images/experience/blinkit.png";
 import zomato from "../Images/experience/zomato.png";
 import attack_capital from "../Images/experience/attack_capital.jpeg";
 import samsung from "../Images/experience/samsung.jpg";
@@ -25,13 +26,22 @@ import Biosphere from "../Images/experience/biosphere.png";
 export default function Experience() {
   const experiences: experienceType[] = [
     {
+      name: "Blinkit",
+      image: blinkit,
+      description:
+        "Got promoted to SDE-1, part of the backend team of Blinkit Ambulance Service.",
+      position: "Software Engineer",
+      startDate: "Jun 2025",
+      endDate: "Present",
+    },
+    {
       name: "Zomato",
       image: zomato,
       description:
-        "Joined Zomato for SDE role",
-      position: "SDE Intern",
+        "Part of Blinkit Ambulance Team",
+      position: "Software Engineer Intern",
       startDate: "Jan 2025",
-      endDate: "Present",
+      endDate: "Jun 2025",
     },
     {
       name: "Attack Capital",
@@ -50,8 +60,8 @@ export default function Experience() {
         "Part of the Samsung PRISM research program to work with professionals from Samsung",
       position: "PRISM Developer",
       tech: ["Research"],
-      startDate: "Sept 2023",
-      endDate: "Present",
+      startDate: "Feb 2024",
+      endDate: "Aug 2024",
     },
     {
       name: "VIT Chennai",
@@ -90,7 +100,7 @@ export default function Experience() {
       position: "Microsoft Learn Student Ambassador",
       tech: ["Microsoft Learn", "Teamwork"],
       startDate: "Apr 2023",
-      endDate: "Present",
+      endDate: "Dec 2024",
     },
     {
       name: "eGov Foundation",
@@ -110,7 +120,7 @@ export default function Experience() {
       position: "Web Developer",
       tech: ["MERN", "Tailwind"],
       startDate: "Oct 2022",
-      endDate: "Present",
+      endDate: "Dec 2024",
     },
     {
       name: "Pupilfirst",
